@@ -17,7 +17,7 @@ TMOAlisBilgileriYoneticisi &TMOGenelVeriYoneticisi::getAlisBilgileri()
     return alisbilgileri;
 }
 
-TMOAlisFaturasiYoneticisi &TMOGenelVeriYoneticisi::getAlisFaturaları()
+TMOAlisFaturasiYoneticisi &TMOGenelVeriYoneticisi::getAlisFaturalari()
 {
     return alisFaturalari;
 }

@@ -109,7 +109,7 @@ void TMOAnakart::setAnakartBoyutu(const Metin &value)
     emit AnakartBoyutuDegisti(AnakartBoyutu);
 }
 QDataStream &operator<<(QDataStream &stream,const TMOAnakartPtr &veri){
-    stream << veri->getId()<<veri->getAnakartAdi()<<veri->getAnakartBoyutu()<<veri->getAnakartChipseti()<<veri->getAnakartModelNo()<<veri->getAnakartRamTipi()<<veri->getAnakartSoketTipi()<<veri->getAnakartVgaSlotu();
+    stream << veri->getId()<<veri->getAnakartAdi()<<veri->getAnakartModelNo()<<veri->getAnakartSoketTipi()<<veri->getAnakartChipseti()<<veri->getAnakartRamTipi()<<veri->getAnakartVgaSlotu()<<veri->getAnakartBoyutu();
     return stream;
 }
 QDataStream &operator>>(QDataStream &stream,TMOAnakartPtr &veri){
@@ -121,7 +121,7 @@ QDataStream &operator>>(QDataStream &stream,TMOAnakartPtr &veri){
     Metin AnakartRamTipi;
     Metin AnakartVgaSlotu;
     Metin AnakartBoyutu;
-    stream >> AnakartId>>AnakartAdi>>AnakartBoyutu>>AnakartChipseti>>AnakartModelNo>>AnakartRamTipi>>AnakartSoketTipi>>AnakartVgaSlotu;
+    stream >> AnakartId>>AnakartAdi>>AnakartModelNo>>AnakartSoketTipi>>AnakartChipseti>>AnakartRamTipi>>AnakartVgaSlotu>>AnakartBoyutu;
     veri=std::make_shared<TMOAnakart>();
     veri->setId(AnakartId);
     veri->setAnakartAdi(AnakartAdi);

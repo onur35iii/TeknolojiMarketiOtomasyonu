@@ -40,7 +40,7 @@ public:
     static TMOGenelVeriYoneticisi &sec();
 
     TMOAlisBilgileriYoneticisi &getAlisBilgileri();
-    TMOAlisFaturasiYoneticisi  &getAlisFaturaları();
+    TMOAlisFaturasiYoneticisi  &getAlisFaturalari();
     TMOAnakartYoneticisi       &getAnakart();
     TMOFareYoneticisi &getFare();
     TMOGPUYoneticisi &getGPU();

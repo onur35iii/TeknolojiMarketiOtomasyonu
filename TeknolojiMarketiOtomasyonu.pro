@@ -9,6 +9,16 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    UI/VeriFormlari/tmogputanimlamaformu.cpp \
+    UI/VeriFormlari/tmoguckaynagitanimlamaformu.cpp \
+    UI/VeriFormlari/tmohddtanimlamaformu.cpp \
+    UI/VeriFormlari/tmoislemcitanimlamaformu.cpp \
+    UI/VeriFormlari/tmokasatanimlamaformu.cpp \
+    UI/VeriFormlari/tmoklavyetanimlamaformu.cpp \
+    UI/VeriFormlari/tmomonitortanimlamaformu.cpp \
+    UI/VeriFormlari/tmoramtanimlamaformu.cpp \
+    UI/VeriFormlari/tmoyenianakarttanimlamaformu.cpp \
+    UI/VeriFormlari/tmoyenifaretanimlamaformu.cpp \
     main.cpp \
     tmoanapencere.cpp \
     veriler/tmogenelveriyoneticisi.cpp \
@@ -52,6 +62,16 @@ SOURCES += \
     veriler/veri_yoneticileri/tmotoplamabilgisayarsatisfaturasiyoneticisi.cpp
 
 HEADERS += \
+    UI/VeriFormlari/tmogputanimlamaformu.h \
+    UI/VeriFormlari/tmoguckaynagitanimlamaformu.h \
+    UI/VeriFormlari/tmohddtanimlamaformu.h \
+    UI/VeriFormlari/tmoislemcitanimlamaformu.h \
+    UI/VeriFormlari/tmokasatanimlamaformu.h \
+    UI/VeriFormlari/tmoklavyetanimlamaformu.h \
+    UI/VeriFormlari/tmomonitortanimlamaformu.h \
+    UI/VeriFormlari/tmoramtanimlamaformu.h \
+    UI/VeriFormlari/tmoyenianakarttanimlamaformu.h \
+    UI/VeriFormlari/tmoyenifaretanimlamaformu.h \
     tmoanapencere.h \
     veriler/TANIMLAR.h \
     veriler/tmogenelveriyoneticisi.h \
@@ -98,6 +118,16 @@ HEADERS += \
     veriler/veri_yoneticileri/tmotoplamabilgisayarsatisfaturasiyoneticisi.h
 
 FORMS += \
+    UI/VeriFormlari/tmogputanimlamaformu.ui \
+    UI/VeriFormlari/tmoguckaynagitanimlamaformu.ui \
+    UI/VeriFormlari/tmohddtanimlamaformu.ui \
+    UI/VeriFormlari/tmoislemcitanimlamaformu.ui \
+    UI/VeriFormlari/tmokasatanimlamaformu.ui \
+    UI/VeriFormlari/tmoklavyetanimlamaformu.ui \
+    UI/VeriFormlari/tmomonitortanimlamaformu.ui \
+    UI/VeriFormlari/tmoramtanimlamaformu.ui \
+    UI/VeriFormlari/tmoyenianakarttanimlamaformu.ui \
+    UI/VeriFormlari/tmoyenifaretanimlamaformu.ui \
     tmoanapencere.ui
 
 TRANSLATIONS += \
