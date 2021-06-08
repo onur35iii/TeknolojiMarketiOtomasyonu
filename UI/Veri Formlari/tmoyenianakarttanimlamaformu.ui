@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TMOYeniAnakartTanimlamaFormu</class>
+ <widget class="QDialog" name="TMOYeniAnakartTanimlamaFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1356</width>
+    <height>876</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="GBAnakartEklemeBilgileri">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>291</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Anakart Ekleme Bilgileri</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="LBLAnakartAdi">
+      <property name="text">
+       <string>Anakart Adı:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEAnakartAdi</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEAnakartAdi"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="LBLAnakartModelNo">
+      <property name="text">
+       <string>Anakart Model No:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEAnakartModelNo</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEAnakartModelNo"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="LBLAnakartSoketTipi">
+      <property name="text">
+       <string>Anakart Soket Tipi:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEAnakartSoketTipi</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEAnakartSoketTipi"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="AnakartChipseti">
+      <property name="text">
+       <string>Anakart Chipseti</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEAnakartChipseti</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEAnakartChipseti"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="LBLAnakartRamTipi">
+      <property name="text">
+       <string>Anakart Ram Tipi</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEAnakartRamTipi</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEAnakartRamTipi"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="LBLAnakartVGASlotu">
+      <property name="text">
+       <string>Anakart VGA Slotu</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEAnakartVGASlotu</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEAnakartVGASlotu"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="LBLAnakartBoyutu">
+      <property name="text">
+       <string>Anakart Boyutu</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEAnakartBoyutu</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEAnakartBoyutu"/>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <widget class="QPushButton" name="PBKaydet">
+      <property name="text">
+       <string>Kaydet</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QPushButton" name="PBIptal">
+      <property name="text">
+       <string>Iptal</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>90</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>asdsad</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>asdsadasdf43</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>324325</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2343254</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
