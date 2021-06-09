@@ -94,8 +94,6 @@ HEADERS += \
     veriler/veri_siniflari/tmotedarikcibilgileri.h \
     veriler/veri_siniflari/tmotoplamabilgisayarsatisbilgileri.h \
     veriler/veri_siniflari/tmotoplamabilgisayarsatisfaturasi.h \
-    veriler/veri_yoneticileri/TMOTemelVeriYöneticisi.h \
-    veriler/veri_yoneticileri/temel_veri_yöneticisi.h \
     veriler/veri_yoneticileri/temelveriyoneticisi.h \
     veriler/veri_yoneticileri/tmoalisbilgileriyoneticisi.h \
     veriler/veri_yoneticileri/tmoalisfaturasiyoneticisi.h \

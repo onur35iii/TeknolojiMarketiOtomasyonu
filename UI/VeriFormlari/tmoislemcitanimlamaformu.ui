@@ -6,18 +6,18 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>363</width>
-    <height>449</height>
+    <width>294</width>
+    <height>388</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="GBIslemciBolumu">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>40</y>
+     <x>30</x>
+     <y>10</y>
      <width>234</width>
      <height>350</height>
     </rect>
@@ -27,20 +27,20 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0" colspan="2">
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QGroupBox" name="GBMarkalar">
       <property name="title">
        <string>Markalar</string>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QRadioButton" name="radioButton">
+        <widget class="QRadioButton" name="RBIntel">
          <property name="text">
           <string>INTEL</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QRadioButton" name="radioButton_2">
+        <widget class="QRadioButton" name="RBAMD">
          <property name="text">
           <string>AMD</string>
          </property>
@@ -50,90 +50,90 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="LModelNo">
       <property name="text">
        <string>MODEL NO:</string>
       </property>
      </widget>
     </item>
     <item row="1" column="1">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="LEModelNo"/>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="LSoketTipi">
       <property name="text">
        <string>SOKET TİPİ:</string>
       </property>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="LESoketTipi"/>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="LHizi">
       <property name="text">
        <string>HIZI:</string>
       </property>
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="QLineEdit" name="lineEdit_3"/>
+     <widget class="QLineEdit" name="LEHizi"/>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="LCekirdekSayisi">
       <property name="text">
        <string>ÇEKİRDEK SAYISI:</string>
       </property>
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="QLineEdit" name="lineEdit_4"/>
+     <widget class="QLineEdit" name="LECekirdekSayisi"/>
     </item>
     <item row="5" column="0">
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="LOnBellek">
       <property name="text">
        <string>ÖNBELLEK:</string>
       </property>
      </widget>
     </item>
     <item row="5" column="1">
-     <widget class="QLineEdit" name="lineEdit_5"/>
+     <widget class="QLineEdit" name="LEOnbellek"/>
     </item>
     <item row="6" column="0">
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="LBellekTuru">
       <property name="text">
        <string>BELLEK TÜRÜ:</string>
       </property>
      </widget>
     </item>
     <item row="6" column="1">
-     <widget class="QLineEdit" name="lineEdit_6"/>
+     <widget class="QLineEdit" name="LEBellekTuru"/>
     </item>
     <item row="7" column="0">
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="LGucTuketimi">
       <property name="text">
        <string>GÜÇ TÜKETİMİ:</string>
       </property>
      </widget>
     </item>
     <item row="7" column="1">
-     <widget class="QLineEdit" name="lineEdit_7"/>
+     <widget class="QLineEdit" name="LEGucTuketimi"/>
     </item>
     <item row="8" column="0" colspan="2">
-     <widget class="QGroupBox" name="groupBox_3">
+     <widget class="QGroupBox" name="GBEntegreGPUvarmi">
       <property name="title">
        <string>Entegre GPU var mı?</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
-        <widget class="QRadioButton" name="radioButton_3">
+        <widget class="QRadioButton" name="RBVar">
          <property name="text">
           <string>VAR</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QRadioButton" name="radioButton_4">
+        <widget class="QRadioButton" name="RBYok">
          <property name="text">
           <string>YOK</string>
          </property>
@@ -143,14 +143,14 @@
      </widget>
     </item>
     <item row="9" column="0">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="PBKaydet">
       <property name="text">
        <string>KAYDET</string>
       </property>
      </widget>
     </item>
     <item row="9" column="1">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="PBIptal">
       <property name="text">
        <string>IPTAL</string>
       </property>

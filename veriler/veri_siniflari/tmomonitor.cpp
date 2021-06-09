@@ -96,21 +96,36 @@ void TMOMonitor::setMonitorRenk(const Metin &value)
     MonitorRenk = value;
     emit MonitorRenkDegisti(MonitorRenk);
 }
+
+Metin TMOMonitor::getMonitorAdi() const
+{
+    return MonitorAdi;
+}
+
+void TMOMonitor::setMonitorAdi(const Metin &value)
+{ if(value==MonitorAdi)
+        return;
+ MonitorAdi = value;
+    emit MonitorAdiDegisti(MonitorAdi);
+}
 QDataStream &operator<<(QDataStream &stream, const TMOMonitorPtr &veri){
     stream << veri->getId()<<veri->getMonitorModelNo()<<veri->getMonitorHDMIBaglantiSayisi()<<veri->getMonitorYenilemeHizi()<<veri->getMonitorBoyutu()<<veri->getMonitorCozunurluk()<<veri->getMonitorRenk();
     return stream;
 }
 QDataStream &operator>>(QDataStream &stream, TMOMonitorPtr &veri){
     Idturu MonitorId;
+    Metin MonitorAdi;
     Metin MonitorModelNo;
     Tamsayi MonitorHDMIBaglantiSayisi;
     Tamsayi MonitorYenilemeHizi;
     Tamsayi MonitorBoyutu;
     Tamsayi MonitorCozunurluk;
     Metin MonitorRenk;
-    stream >> MonitorId>>MonitorModelNo>>MonitorHDMIBaglantiSayisi>>MonitorYenilemeHizi>>MonitorBoyutu>>MonitorCozunurluk>>MonitorRenk;
+
+    stream >> MonitorId>>MonitorAdi>>MonitorModelNo>>MonitorHDMIBaglantiSayisi>>MonitorYenilemeHizi>>MonitorBoyutu>>MonitorCozunurluk>>MonitorRenk;
     veri=std::make_shared<TMOMonitor>();
     veri->setId(MonitorId);
+    veri->setMonitorAdi(MonitorAdi);
     veri->setMonitorModelNo(MonitorModelNo);
     veri->setMonitorHDMIBaglantiSayisi(MonitorHDMIBaglantiSayisi);
     veri->setMonitorYenilemeHizi(MonitorYenilemeHizi);

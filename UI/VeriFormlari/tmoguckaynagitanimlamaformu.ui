@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="GBGucKaynagiBolumu">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -27,34 +27,34 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0" colspan="3">
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QGroupBox" name="GBMarkalar">
       <property name="title">
        <string>Markalar</string>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QRadioButton" name="radioButton">
+        <widget class="QRadioButton" name="RBSeasonic">
          <property name="text">
           <string>SEASONIC</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QRadioButton" name="radioButton_3">
+        <widget class="QRadioButton" name="RBEvga">
          <property name="text">
           <string>EVGA</string>
          </property>
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QRadioButton" name="radioButton_2">
+        <widget class="QRadioButton" name="RBAsus">
          <property name="text">
           <string>ASUS</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QRadioButton" name="radioButton_4">
+        <widget class="QRadioButton" name="RBFSP">
          <property name="text">
           <string>FSP</string>
          </property>
@@ -64,44 +64,53 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="LModel">
       <property name="text">
        <string>MODEL:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEModel</cstring>
       </property>
      </widget>
     </item>
     <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="LEModel"/>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="LFanBoyutu">
       <property name="text">
        <string>FAN BOYUTU:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEFanBoyutu</cstring>
       </property>
      </widget>
     </item>
     <item row="2" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="LEFanBoyutu"/>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="LDegeri">
       <property name="text">
        <string>DEGERİ:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEDegeri</cstring>
       </property>
      </widget>
     </item>
     <item row="3" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_3"/>
+     <widget class="QLineEdit" name="LEDegeri"/>
     </item>
     <item row="4" column="0" colspan="2">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="PBKaydet">
       <property name="text">
        <string>KAYDET</string>
       </property>
      </widget>
     </item>
     <item row="4" column="2">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="PBIptal">
       <property name="text">
        <string>IPTAL</string>
       </property>
@@ -110,6 +119,17 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>RBSeasonic</tabstop>
+  <tabstop>RBAsus</tabstop>
+  <tabstop>RBEvga</tabstop>
+  <tabstop>RBFSP</tabstop>
+  <tabstop>LEModel</tabstop>
+  <tabstop>LEFanBoyutu</tabstop>
+  <tabstop>LEDegeri</tabstop>
+  <tabstop>PBKaydet</tabstop>
+  <tabstop>PBIptal</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

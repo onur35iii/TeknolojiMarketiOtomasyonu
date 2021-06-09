@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="GBFareBolumu">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -27,36 +27,36 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0" colspan="3">
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QGroupBox" name="GBMarkalar">
       <property name="title">
        <string>Markalar</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
-        <layout class="QGridLayout" name="gridLayout">
+        <layout class="QGridLayout" name="GLMarkalar">
          <item row="0" column="0">
-          <widget class="QRadioButton" name="radioButton">
+          <widget class="QRadioButton" name="RBLogitech">
            <property name="text">
             <string>LOGITECH</string>
            </property>
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QRadioButton" name="radioButton_3">
+          <widget class="QRadioButton" name="RBAsus">
            <property name="text">
             <string>ASUS</string>
            </property>
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QRadioButton" name="radioButton_2">
+          <widget class="QRadioButton" name="RBRazer">
            <property name="text">
             <string>RAZER</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QRadioButton" name="radioButton_4">
+          <widget class="QRadioButton" name="RBMicrosoft">
            <property name="text">
             <string>MICROSOFT</string>
            </property>
@@ -68,54 +68,66 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="LModeli">
       <property name="text">
        <string>MODELİ:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEModeli</cstring>
       </property>
      </widget>
     </item>
     <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="LEModeli"/>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="LRenk">
       <property name="text">
        <string>RENK :</string>
+      </property>
+      <property name="buddy">
+       <cstring>CBRenk</cstring>
       </property>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QComboBox" name="comboBox"/>
+     <widget class="QComboBox" name="CBRenk"/>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="LDPI">
       <property name="text">
        <string>DPI:</string>
+      </property>
+      <property name="buddy">
+       <cstring>CBDPI</cstring>
       </property>
      </widget>
     </item>
     <item row="3" column="1">
-     <widget class="QComboBox" name="comboBox_2"/>
+     <widget class="QComboBox" name="CBDPI"/>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="LBaglantiTuru">
       <property name="text">
        <string>BAĞLANTI TÜRÜ:</string>
+      </property>
+      <property name="buddy">
+       <cstring>CBBag</cstring>
       </property>
      </widget>
     </item>
     <item row="4" column="1">
-     <widget class="QComboBox" name="comboBox_3"/>
+     <widget class="QComboBox" name="CBBag"/>
     </item>
     <item row="5" column="0" colspan="2">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="PBKaydet">
       <property name="text">
        <string>KAYDET</string>
       </property>
      </widget>
     </item>
     <item row="5" column="2">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="PBIptal">
       <property name="text">
        <string>IPTAL</string>
       </property>
@@ -124,6 +136,18 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>RBLogitech</tabstop>
+  <tabstop>RBRazer</tabstop>
+  <tabstop>RBAsus</tabstop>
+  <tabstop>RBMicrosoft</tabstop>
+  <tabstop>LEModeli</tabstop>
+  <tabstop>CBRenk</tabstop>
+  <tabstop>CBDPI</tabstop>
+  <tabstop>CBBag</tabstop>
+  <tabstop>PBKaydet</tabstop>
+  <tabstop>PBIptal</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

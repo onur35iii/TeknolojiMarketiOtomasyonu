@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="GBAnakartBolumu">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -27,29 +27,29 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0" colspan="2">
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QGroupBox" name="GBMarkalar">
       <property name="title">
        <string>Markalar</string>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <layout class="QFormLayout" name="formLayout_2">
+        <layout class="QFormLayout" name="FLMarkalar1">
          <item row="0" column="0">
-          <widget class="QRadioButton" name="radioButton">
+          <widget class="QRadioButton" name="RBAsus">
            <property name="text">
             <string>ASUS</string>
            </property>
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QRadioButton" name="radioButton_2">
+          <widget class="QRadioButton" name="RBMSI">
            <property name="text">
             <string>MSI</string>
            </property>
           </widget>
          </item>
          <item row="2" column="0">
-          <widget class="QRadioButton" name="radioButton_3">
+          <widget class="QRadioButton" name="RBGigabyte">
            <property name="text">
             <string>GIGABYTE</string>
            </property>
@@ -58,23 +58,23 @@
         </layout>
        </item>
        <item row="0" column="1">
-        <layout class="QFormLayout" name="formLayout">
+        <layout class="QFormLayout" name="FLMarkalar2">
          <item row="0" column="0">
-          <widget class="QRadioButton" name="radioButton_4">
+          <widget class="QRadioButton" name="RBAsrock">
            <property name="text">
             <string>ASROCK</string>
            </property>
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QRadioButton" name="radioButton_5">
+          <widget class="QRadioButton" name="RBEsonic">
            <property name="text">
             <string>ESONIC</string>
            </property>
           </widget>
          </item>
          <item row="2" column="0">
-          <widget class="QRadioButton" name="radioButton_6">
+          <widget class="QRadioButton" name="RBBiostar">
            <property name="text">
             <string>BIOSTAR</string>
            </property>
@@ -86,112 +86,112 @@
      </widget>
     </item>
     <item row="1" column="0" colspan="2">
-     <layout class="QFormLayout" name="formLayout_3">
+     <layout class="QFormLayout" name="FLModelNo">
       <item row="0" column="1">
-       <widget class="QLineEdit" name="lineEdit"/>
+       <widget class="QLineEdit" name="LEModelNo"/>
       </item>
       <item row="0" column="0">
-       <widget class="QLabel" name="label">
+       <widget class="QLabel" name="LModelNo">
         <property name="text">
          <string>MODEL NO:</string>
         </property>
         <property name="buddy">
-         <cstring>lineEdit</cstring>
+         <cstring>LEModelNo</cstring>
         </property>
        </widget>
       </item>
      </layout>
     </item>
     <item row="2" column="0" colspan="2">
-     <layout class="QFormLayout" name="formLayout_4">
+     <layout class="QFormLayout" name="FLSoketTipi">
       <item row="0" column="0">
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="LSoketTipi">
         <property name="text">
          <string>SOKET TİPİ:</string>
         </property>
         <property name="buddy">
-         <cstring>comboBox</cstring>
+         <cstring>CBSoketTipi</cstring>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QComboBox" name="comboBox"/>
+       <widget class="QComboBox" name="CBSoketTipi"/>
       </item>
      </layout>
     </item>
     <item row="3" column="0" colspan="2">
-     <layout class="QFormLayout" name="formLayout_5">
+     <layout class="QFormLayout" name="FLRAMTipi">
       <item row="0" column="0">
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="LRAMTipi">
         <property name="text">
          <string>RAM TİPİ :</string>
         </property>
         <property name="buddy">
-         <cstring>comboBox_2</cstring>
+         <cstring>CBRAMTipi</cstring>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QComboBox" name="comboBox_2"/>
+       <widget class="QComboBox" name="CBRAMTipi"/>
       </item>
      </layout>
     </item>
     <item row="4" column="0" colspan="2">
-     <layout class="QFormLayout" name="formLayout_6">
+     <layout class="QFormLayout" name="FLChipseti">
       <item row="0" column="0">
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="LChipseti">
         <property name="text">
          <string>CHİPSETİ</string>
         </property>
         <property name="buddy">
-         <cstring>comboBox_3</cstring>
+         <cstring>CBChipseti</cstring>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QComboBox" name="comboBox_3"/>
+       <widget class="QComboBox" name="CBChipseti"/>
       </item>
      </layout>
     </item>
     <item row="5" column="0" colspan="2">
-     <layout class="QFormLayout" name="formLayout_7">
+     <layout class="QFormLayout" name="FLVGASlotSayisi">
       <item row="0" column="0">
-       <widget class="QLabel" name="label_5">
+       <widget class="QLabel" name="LVGASlotSayisi">
         <property name="text">
          <string>VGA SLOT SAYISI:</string>
         </property>
         <property name="buddy">
-         <cstring>comboBox_4</cstring>
+         <cstring>CBVGASlotSayisi</cstring>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QComboBox" name="comboBox_4"/>
+       <widget class="QComboBox" name="CBVGASlotSayisi"/>
       </item>
      </layout>
     </item>
     <item row="6" column="0">
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="LAnakartBoyutu">
       <property name="text">
        <string>ANAKART BOYUTU:</string>
       </property>
       <property name="buddy">
-       <cstring>lineEdit_2</cstring>
+       <cstring>LEAnakartBoyutu</cstring>
       </property>
      </widget>
     </item>
     <item row="6" column="1">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="LEAnakartBoyutu"/>
     </item>
     <item row="7" column="0">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="PBKaydet">
       <property name="text">
        <string>KAYDET</string>
       </property>
      </widget>
     </item>
     <item row="7" column="1">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="PBIptal">
       <property name="text">
        <string>IPTAL</string>
       </property>
@@ -200,6 +200,22 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>RBAsus</tabstop>
+  <tabstop>RBMSI</tabstop>
+  <tabstop>RBGigabyte</tabstop>
+  <tabstop>RBAsrock</tabstop>
+  <tabstop>RBEsonic</tabstop>
+  <tabstop>RBBiostar</tabstop>
+  <tabstop>LEModelNo</tabstop>
+  <tabstop>CBSoketTipi</tabstop>
+  <tabstop>CBRAMTipi</tabstop>
+  <tabstop>CBChipseti</tabstop>
+  <tabstop>CBVGASlotSayisi</tabstop>
+  <tabstop>LEAnakartBoyutu</tabstop>
+  <tabstop>PBKaydet</tabstop>
+  <tabstop>PBIptal</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="GPGPUBolumu">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -27,34 +27,34 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="0" colspan="3">
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QGroupBox" name="GPMarkalar">
       <property name="title">
        <string>Markalar</string>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QRadioButton" name="radioButton">
+        <widget class="QRadioButton" name="RBMSI">
          <property name="text">
           <string>MSI</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QRadioButton" name="radioButton_3">
+        <widget class="QRadioButton" name="RBAsus">
          <property name="text">
           <string>ASUS</string>
          </property>
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QRadioButton" name="radioButton_2">
+        <widget class="QRadioButton" name="RBGigabyte">
          <property name="text">
           <string>GIGABYTE</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QRadioButton" name="radioButton_4">
+        <widget class="QRadioButton" name="RBZotac">
          <property name="text">
           <string>ZOTAC</string>
          </property>
@@ -64,54 +64,69 @@
      </widget>
     </item>
     <item row="1" column="0">
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="LModelNo">
       <property name="text">
        <string>MODEL NO:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEModelNo</cstring>
       </property>
      </widget>
     </item>
     <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit"/>
+     <widget class="QLineEdit" name="LEModelNo"/>
     </item>
     <item row="2" column="0">
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="LBellekHizi">
       <property name="text">
        <string>BELLEK HIZI:</string>
+      </property>
+      <property name="buddy">
+       <cstring>CBBellekHizi</cstring>
       </property>
      </widget>
     </item>
     <item row="2" column="1" colspan="2">
-     <widget class="QComboBox" name="comboBox"/>
+     <widget class="QComboBox" name="CBBellekHizi"/>
     </item>
     <item row="3" column="0">
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="LSlotSayisi">
       <property name="text">
        <string>SLOT SAYISI:</string>
+      </property>
+      <property name="buddy">
+       <cstring>CBSlotSayisi</cstring>
       </property>
      </widget>
     </item>
     <item row="3" column="1" colspan="2">
-     <widget class="QComboBox" name="comboBox_2"/>
+     <widget class="QComboBox" name="CBSlotSayisi"/>
     </item>
     <item row="4" column="0">
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="LGucTuketimi">
       <property name="text">
        <string>GÜÇ TÜKETİMİ:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEGucTuketimi</cstring>
       </property>
      </widget>
     </item>
     <item row="4" column="1" colspan="2">
-     <widget class="QLineEdit" name="lineEdit_2"/>
+     <widget class="QLineEdit" name="LEGucTuketimi"/>
     </item>
     <item row="5" column="0">
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="LGPUBoyutu">
       <property name="text">
        <string>GPU BOYUTU:</string>
+      </property>
+      <property name="buddy">
+       <cstring>CBGPUBoyutu</cstring>
       </property>
      </widget>
     </item>
     <item row="5" column="1" colspan="2">
-     <widget class="QComboBox" name="comboBox_3"/>
+     <widget class="QComboBox" name="CBGPUBoyutu"/>
     </item>
     <item row="6" column="0" colspan="2">
      <widget class="QPushButton" name="PBKaydet">
@@ -130,6 +145,19 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>RBMSI</tabstop>
+  <tabstop>RBGigabyte</tabstop>
+  <tabstop>RBAsus</tabstop>
+  <tabstop>RBZotac</tabstop>
+  <tabstop>LEModelNo</tabstop>
+  <tabstop>CBBellekHizi</tabstop>
+  <tabstop>CBSlotSayisi</tabstop>
+  <tabstop>LEGucTuketimi</tabstop>
+  <tabstop>CBGPUBoyutu</tabstop>
+  <tabstop>PBKaydet</tabstop>
+  <tabstop>PBIptal</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

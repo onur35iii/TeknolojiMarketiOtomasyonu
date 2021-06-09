@@ -26,6 +26,9 @@ public:
     Tamsayi getMonitorBoyutu() const;
     Tamsayi getMonitorCozunurluk() const;
     Metin getMonitorRenk() const;
+    Metin getMonitorAdi() const;
+
+
 signals:
     void IdDegisti(const Idturu &value);
     void MonitorModelNoDegisti(const Metin &value);
@@ -34,7 +37,7 @@ signals:
     void MonitorBoyutuDegisti(const Tamsayi &value);
     void MonitorCozunurlukDegisti(const Tamsayi &value);
     void MonitorRenkDegisti(const Metin &value);
-
+    void MonitorAdiDegisti(const Metin &value);
 public slots:
     void setId(const Idturu &value);
     void setMonitorModelNo(const Metin &value);
@@ -43,9 +46,10 @@ public slots:
     void setMonitorBoyutu(const Tamsayi &value);
     void setMonitorCozunurluk(const Tamsayi &value);
     void setMonitorRenk(const Metin &value);
-
+    void setMonitorAdi(const Metin &value);
 private:
     Idturu MonitorId;
+    Metin MonitorAdi;
     Metin MonitorModelNo;
     Tamsayi MonitorHDMIBaglantiSayisi;
     Tamsayi MonitorYenilemeHizi;
