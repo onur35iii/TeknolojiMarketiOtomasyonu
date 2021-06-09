@@ -16,7 +16,7 @@ public:
     Q_PROPERTY(Tamsayi MonitorBoyutu READ getMonitorBoyutu WRITE setMonitorBoyutu NOTIFY MonitorBoyutuDegisti)
     Q_PROPERTY(Tamsayi MonitorCozunurluk READ getMonitorCozunurluk WRITE setMonitorCozunurluk NOTIFY MonitorCozunurlukDegisti)
     Q_PROPERTY(Metin MonitorRenk READ getMonitorRenk WRITE setMonitorRenk NOTIFY MonitorRenkDegisti)
-
+    Q_PROPERTY(Metin MonitorAdi READ getMonitorAdi WRITE setMonitorAdi NOTIFY MonitorAdiDegisti)
 
     //MODEL ADI EKLENECEK...
     Idturu getId() const;

@@ -13,3 +13,8 @@ TMOAnaPencere::~TMOAnaPencere()
     delete ui;
 }
 
+// Tamsayi veri türünü lineeditten nasıl çekeriz
+//radiobuttondan veri çekme veri türü hatasi
+// comboboxtan veri çekme nasıl oluyor
+//  datastream hataları
+
