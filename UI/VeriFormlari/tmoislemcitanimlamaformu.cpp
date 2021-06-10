@@ -1,6 +1,6 @@
 #include "tmoislemcitanimlamaformu.h"
 #include "ui_tmoislemcitanimlamaformu.h"
-
+#include <veriler/veri_siniflari/tmoislemci.h>
 TMOIslemciTanimlamaFormu::TMOIslemciTanimlamaFormu(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::TMOIslemciTanimlamaFormu)
@@ -11,4 +11,14 @@ TMOIslemciTanimlamaFormu::TMOIslemciTanimlamaFormu(QWidget *parent) :
 TMOIslemciTanimlamaFormu::~TMOIslemciTanimlamaFormu()
 {
     delete ui;
+}
+
+TMOIslemciPtr TMOIslemciTanimlamaFormu::getVeri() const
+{
+    return veri;
+}
+
+void TMOIslemciTanimlamaFormu::setVeri(const TMOIslemciPtr &value)
+{
+    veri = value;
 }

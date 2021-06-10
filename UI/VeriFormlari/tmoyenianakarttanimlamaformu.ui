@@ -97,20 +97,7 @@
        <string>VGA SLOT SAYISI:</string>
       </property>
       <property name="buddy">
-       <cstring>SBVGASlotSayisi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QSpinBox" name="SBVGASlotSayisi">
-      <property name="suffix">
-       <string> Slot</string>
-      </property>
-      <property name="minimum">
-       <number>1</number>
-      </property>
-      <property name="maximum">
-       <number>6</number>
+       <cstring>LEVGASlotSayisi</cstring>
       </property>
      </widget>
     </item>
@@ -141,6 +128,9 @@
       </property>
      </widget>
     </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="LEVGASlotSayisi"/>
+    </item>
    </layout>
   </widget>
  </widget>
@@ -150,7 +140,7 @@
   <tabstop>LESoketTipi</tabstop>
   <tabstop>LERamTipi</tabstop>
   <tabstop>LEChipseti</tabstop>
-  <tabstop>SBVGASlotSayisi</tabstop>
+  <tabstop>LEVGASlotSayisi</tabstop>
   <tabstop>LEAnakartBoyutu</tabstop>
   <tabstop>PBKaydet</tabstop>
   <tabstop>PBIptal</tabstop>

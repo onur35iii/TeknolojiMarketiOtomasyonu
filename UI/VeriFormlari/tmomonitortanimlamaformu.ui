@@ -58,12 +58,12 @@
        <string>HDMI SAYISI:</string>
       </property>
       <property name="buddy">
-       <cstring>LHDMISayisi_2</cstring>
+       <cstring>LEHDMISayisi</cstring>
       </property>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QLineEdit" name="LHDMISayisi_2"/>
+     <widget class="QLineEdit" name="LEHDMISayisi"/>
     </item>
     <item row="3" column="0">
      <widget class="QLabel" name="LYenilemeHizi">
@@ -137,7 +137,7 @@
  <tabstops>
   <tabstop>LEMarka</tabstop>
   <tabstop>LEModelNo</tabstop>
-  <tabstop>LHDMISayisi_2</tabstop>
+  <tabstop>LEHDMISayisi</tabstop>
   <tabstop>LEYenilemeHizi</tabstop>
   <tabstop>LEBoyut</tabstop>
   <tabstop>LECozunurluk</tabstop>

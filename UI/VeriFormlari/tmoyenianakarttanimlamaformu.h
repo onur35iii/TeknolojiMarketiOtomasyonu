@@ -1,6 +1,6 @@
 #ifndef TMOYENIANAKARTTANIMLAMAFORMU_H
 #define TMOYENIANAKARTTANIMLAMAFORMU_H
-
+#include<veriler/TANIMLAR.h>
 #include <QDialog>
 
 namespace Ui {
@@ -15,8 +15,12 @@ public:
     explicit TMOYeniAnakartTanimlamaFormu(QWidget *parent = nullptr);
     ~TMOYeniAnakartTanimlamaFormu();
 
+    TMOAnakartPtr getVeri() const;
+    void setVeri(const TMOAnakartPtr &value);
+
 private:
     Ui::TMOYeniAnakartTanimlamaFormu *ui;
+    TMOAnakartPtr veri;
 };
 //git
 #endif // TMOYENIANAKARTTANIMLAMAFORMU_H

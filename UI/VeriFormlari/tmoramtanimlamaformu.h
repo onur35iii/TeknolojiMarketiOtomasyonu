@@ -1,6 +1,6 @@
 #ifndef TMORAMTANIMLAMAFORMU_H
 #define TMORAMTANIMLAMAFORMU_H
-
+#include<veriler/TANIMLAR.h>
 #include <QDialog>
 
 namespace Ui {
@@ -15,8 +15,12 @@ public:
     explicit TMORAMTanimlamaFormu(QWidget *parent = nullptr);
     ~TMORAMTanimlamaFormu();
 
+    TMORAMPtr getVeri() const;
+    void setVeri(const TMORAMPtr &value);
+
 private:
     Ui::TMORAMTanimlamaFormu *ui;
+    TMORAMPtr veri;
 };
 
 #endif // TMORAMTANIMLAMAFORMU_H
