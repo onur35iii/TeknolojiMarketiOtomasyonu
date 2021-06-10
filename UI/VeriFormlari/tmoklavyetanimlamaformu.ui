@@ -26,41 +26,47 @@
     <string>Klavye Bölümü</string>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0" colspan="2">
-     <widget class="QGroupBox" name="GBMarkalar">
-      <property name="title">
-       <string>Markalar</string>
+    <item row="4" column="0">
+     <widget class="QLabel" name="LKlavyeRenk">
+      <property name="text">
+       <string>KLAVYE RENK:</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBMSI">
-         <property name="text">
-          <string>MSI</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBRampage">
-         <property name="text">
-          <string>RAMPAGE</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QRadioButton" name="RBLogitech">
-         <property name="text">
-          <string>LOGITECH</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QRadioButton" name="RBMicrosoft">
-         <property name="text">
-          <string>MICROSOFT</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <property name="buddy">
+       <cstring>LEKlavyeRenk</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="LEKlavyeRenk"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="LKlavyeTuru">
+      <property name="text">
+       <string>KLAVYE TÜRÜ:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEKlavyeTuru</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="LEModelNo"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="LEKlavyeTuru"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="PBIptal">
+      <property name="text">
+       <string>IPTAL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="PBKaydet">
+      <property name="text">
+       <string>KAYDET</string>
+      </property>
      </widget>
     </item>
     <item row="1" column="0">
@@ -73,57 +79,24 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="LEModelNo"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="LKlavyeTuru">
+    <item row="0" column="0">
+     <widget class="QLabel" name="LMarka">
       <property name="text">
-       <string>KLAVYE TÜRÜ:</string>
+       <string>MARKA:</string>
       </property>
       <property name="buddy">
-       <cstring>LEKlavyeTuru</cstring>
+       <cstring>LEMarka</cstring>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="LEKlavyeTuru"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LKlavyeRenk">
-      <property name="text">
-       <string>KLAVYE RENK:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKlavyeRenk</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="LEKlavyeRenk"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QPushButton" name="PBKaydet">
-      <property name="text">
-       <string>KAYDET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QPushButton" name="PBIptal">
-      <property name="text">
-       <string>IPTAL</string>
-      </property>
-     </widget>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="LEMarka"/>
     </item>
    </layout>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>RBMSI</tabstop>
-  <tabstop>RBLogitech</tabstop>
-  <tabstop>RBRampage</tabstop>
-  <tabstop>RBMicrosoft</tabstop>
+  <tabstop>LEMarka</tabstop>
   <tabstop>LEModelNo</tabstop>
   <tabstop>LEKlavyeTuru</tabstop>
   <tabstop>LEKlavyeRenk</tabstop>
@@ -131,5 +104,38 @@
   <tabstop>PBIptal</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOKlavyeTanimlamaFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>50</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOKlavyeTanimlamaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>265</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

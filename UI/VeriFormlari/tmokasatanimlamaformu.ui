@@ -26,91 +26,11 @@
     <string>Kasa Bölümü</string>
    </property>
    <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="0" colspan="2">
-     <widget class="QGroupBox" name="GBKasalar">
-      <property name="title">
-       <string>Markalar</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBAsus">
-         <property name="text">
-          <string>ASUS</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBRampage">
-         <property name="text">
-          <string>RAMPAGE</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QRadioButton" name="RBMSI">
-         <property name="text">
-          <string>MSI</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QRadioButton" name="RBCoolerMaster">
-         <property name="text">
-          <string>COOLER MASTER</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="LModelNo">
-      <property name="text">
-       <string>MODEL NO:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEModelNo</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="LEModelNo"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="LFanSayisi">
-      <property name="text">
-       <string>FAN SAYISI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEFanSayisi</cstring>
-      </property>
-     </widget>
-    </item>
     <item row="2" column="1">
      <widget class="QLineEdit" name="LEFanSayisi"/>
     </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="LKasaBoyutu">
-      <property name="text">
-       <string>KASA BOYUTU:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKasaBoyutu</cstring>
-      </property>
-     </widget>
-    </item>
     <item row="4" column="1">
      <widget class="QLineEdit" name="LEKasaBoyutu"/>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="LKasaAnakartYapisi">
-      <property name="text">
-       <string>KASA ANAKART YAPISI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKasaAnakartYapisi</cstring>
-      </property>
-     </widget>
     </item>
     <item row="5" column="1">
      <widget class="QLineEdit" name="LEKasaAnakartYapisi"/>
@@ -125,8 +45,35 @@
       </property>
      </widget>
     </item>
-    <item row="6" column="1">
-     <widget class="QLineEdit" name="LEKasaRenk"/>
+    <item row="2" column="0">
+     <widget class="QLabel" name="LFanSayisi">
+      <property name="text">
+       <string>FAN SAYISI:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEFanSayisi</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="LKasaAnakartYapisi">
+      <property name="text">
+       <string>KASA ANAKART YAPISI:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEKasaAnakartYapisi</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="LMarka">
+      <property name="text">
+       <string>MARKALAR</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEMarka</cstring>
+      </property>
+     </widget>
     </item>
     <item row="7" column="0">
      <widget class="QPushButton" name="PBKaydet">
@@ -135,6 +82,35 @@
       </property>
      </widget>
     </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="LEMarka"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="LEModelNo"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="LModelNo">
+      <property name="text">
+       <string>MODEL NO:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEModelNo</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="LKasaBoyutu">
+      <property name="text">
+       <string>KASA BOYUTU:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEKasaBoyutu</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="LEKasaRenk"/>
+    </item>
     <item row="7" column="1">
      <widget class="QPushButton" name="PBIptal">
       <property name="text">
@@ -142,41 +118,27 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="0" colspan="2">
-     <widget class="QGroupBox" name="GBGucKaynagiVarMi">
-      <property name="title">
-       <string>Güç Kaynağı var mı?</string>
+    <item row="3" column="0">
+     <widget class="QLabel" name="LGucKaynagi">
+      <property name="text">
+       <string>Güç Kaynağı VAR/YOK?</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBVar">
-         <property name="text">
-          <string>VAR</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBYok">
-         <property name="text">
-          <string>YOK</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <property name="buddy">
+       <cstring>LEGucKaynagi</cstring>
+      </property>
      </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="LEGucKaynagi"/>
     </item>
    </layout>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>RBAsus</tabstop>
-  <tabstop>RBMSI</tabstop>
-  <tabstop>RBRampage</tabstop>
-  <tabstop>RBCoolerMaster</tabstop>
+  <tabstop>LEMarka</tabstop>
   <tabstop>LEModelNo</tabstop>
   <tabstop>LEFanSayisi</tabstop>
-  <tabstop>RBVar</tabstop>
-  <tabstop>RBYok</tabstop>
+  <tabstop>LEGucKaynagi</tabstop>
   <tabstop>LEKasaBoyutu</tabstop>
   <tabstop>LEKasaAnakartYapisi</tabstop>
   <tabstop>LEKasaRenk</tabstop>
@@ -184,5 +146,38 @@
   <tabstop>PBIptal</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOKasaTanimlamaFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>156</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>79</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOKasaTanimlamaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>226</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>331</x>
+     <y>372</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

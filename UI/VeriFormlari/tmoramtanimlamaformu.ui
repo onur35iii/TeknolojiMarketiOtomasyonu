@@ -26,41 +26,60 @@
     <string>RAM Bölümü</string>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0" colspan="3">
-     <widget class="QGroupBox" name="GBMarkalar">
-      <property name="title">
-       <string>Markalar</string>
+    <item row="6" column="0" colspan="2">
+     <widget class="QPushButton" name="PBKaydet">
+      <property name="text">
+       <string>KAYDET</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBSamsung">
-         <property name="text">
-          <string>SAMSUNG</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBLongline">
-         <property name="text">
-          <string>LONGLINE</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QRadioButton" name="RBKingston">
-         <property name="text">
-          <string>KINGSTON</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QRadioButton" name="RBCorsair">
-         <property name="text">
-          <string>CORSAİR</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="LKapasitesi">
+      <property name="text">
+       <string>KAPASİTESİ:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEKapasitesi</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEBusHizi"/>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEGecikmeSuresi"/>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="PBIptal">
+      <property name="text">
+       <string>IPTAL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="LBusHizi">
+      <property name="text">
+       <string>BUS HIZI:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEBusHizi</cstring>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEModelNo"/>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QLineEdit" name="LERAMTipi"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="LGecikmeSuresi">
+      <property name="text">
+       <string>GECİKME SÜRESİ:</string>
+      </property>
+      <property name="buddy">
+       <cstring>LEGecikmeSuresi</cstring>
+      </property>
      </widget>
     </item>
     <item row="1" column="0">
@@ -73,9 +92,6 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEModelNo"/>
-    </item>
     <item row="2" column="0">
      <widget class="QLabel" name="LRAMTipi">
       <property name="text">
@@ -86,70 +102,27 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1" colspan="2">
-     <widget class="QLineEdit" name="LERAMTipi"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LBusHizi">
-      <property name="text">
-       <string>BUS HIZI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEBusHizi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEBusHizi"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="LKapasitesi">
-      <property name="text">
-       <string>KAPASİTESİ:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKapasitesi</cstring>
-      </property>
-     </widget>
-    </item>
     <item row="4" column="1" colspan="2">
      <widget class="QLineEdit" name="LEKapasitesi"/>
     </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="LGecikmeSuresi">
+    <item row="0" column="0">
+     <widget class="QLabel" name="LMarka">
       <property name="text">
-       <string>GECİKME SÜRESİ:</string>
+       <string>MARKA:</string>
       </property>
       <property name="buddy">
-       <cstring>LEGecikmeSuresi</cstring>
+       <cstring>LEMarka</cstring>
       </property>
      </widget>
     </item>
-    <item row="5" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEGecikmeSuresi"/>
-    </item>
-    <item row="6" column="0" colspan="2">
-     <widget class="QPushButton" name="PBKaydet">
-      <property name="text">
-       <string>KAYDET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="2">
-     <widget class="QPushButton" name="PBIptal">
-      <property name="text">
-       <string>IPTAL</string>
-      </property>
-     </widget>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="LEMarka"/>
     </item>
    </layout>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>RBSamsung</tabstop>
-  <tabstop>RBKingston</tabstop>
-  <tabstop>RBLongline</tabstop>
-  <tabstop>RBCorsair</tabstop>
+  <tabstop>LEMarka</tabstop>
   <tabstop>LEModelNo</tabstop>
   <tabstop>LERAMTipi</tabstop>
   <tabstop>LEBusHizi</tabstop>
@@ -159,5 +132,38 @@
   <tabstop>PBIptal</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMORAMTanimlamaFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>52</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMORAMTanimlamaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

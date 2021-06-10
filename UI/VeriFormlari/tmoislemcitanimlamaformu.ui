@@ -18,43 +18,46 @@
     <rect>
      <x>30</x>
      <y>10</y>
-     <width>234</width>
-     <height>350</height>
+     <width>248</width>
+     <height>320</height>
     </rect>
    </property>
    <property name="title">
     <string>İşlemci Bölümü</string>
    </property>
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="0" colspan="2">
-     <widget class="QGroupBox" name="GBMarkalar">
-      <property name="title">
-       <string>Markalar</string>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="9" column="1">
+     <widget class="QPushButton" name="PBIptal">
+      <property name="text">
+       <string>IPTAL</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBIntel">
-         <property name="text">
-          <string>INTEL</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBAMD">
-         <property name="text">
-          <string>AMD</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="LModelNo">
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="LEGucTuketimi"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="LCekirdekSayisi">
       <property name="text">
-       <string>MODEL NO:</string>
+       <string>ÇEKİRDEK SAYISI:</string>
       </property>
      </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="LHizi">
+      <property name="text">
+       <string>HIZI:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="LESoketTipi"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="LECekirdekSayisi"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="LEHizi"/>
     </item>
     <item row="1" column="1">
      <widget class="QLineEdit" name="LEModelNo"/>
@@ -66,38 +69,12 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="LESoketTipi"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LHizi">
+    <item row="1" column="0">
+     <widget class="QLabel" name="LModelNo">
       <property name="text">
-       <string>HIZI:</string>
+       <string>MODEL NO:</string>
       </property>
      </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="LEHizi"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="LCekirdekSayisi">
-      <property name="text">
-       <string>ÇEKİRDEK SAYISI:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="LECekirdekSayisi"/>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="LOnBellek">
-      <property name="text">
-       <string>ÖNBELLEK:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLineEdit" name="LEOnbellek"/>
     </item>
     <item row="6" column="0">
      <widget class="QLabel" name="LBellekTuru">
@@ -106,8 +83,8 @@
       </property>
      </widget>
     </item>
-    <item row="6" column="1">
-     <widget class="QLineEdit" name="LEBellekTuru"/>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="LEMarka"/>
     </item>
     <item row="7" column="0">
      <widget class="QLabel" name="LGucTuketimi">
@@ -116,31 +93,25 @@
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
-     <widget class="QLineEdit" name="LEGucTuketimi"/>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="LEOnbellek"/>
     </item>
-    <item row="8" column="0" colspan="2">
-     <widget class="QGroupBox" name="GBEntegreGPUvarmi">
-      <property name="title">
-       <string>Entegre GPU var mı?</string>
+    <item row="5" column="0">
+     <widget class="QLabel" name="LOnBellek">
+      <property name="text">
+       <string>ÖNBELLEK:</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBVar">
-         <property name="text">
-          <string>VAR</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBYok">
-         <property name="text">
-          <string>YOK</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="LMarka">
+      <property name="text">
+       <string>MARKA:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="LEBellekTuru"/>
     </item>
     <item row="9" column="0">
      <widget class="QPushButton" name="PBKaydet">
@@ -149,16 +120,65 @@
       </property>
      </widget>
     </item>
-    <item row="9" column="1">
-     <widget class="QPushButton" name="PBIptal">
+    <item row="8" column="0">
+     <widget class="QLabel" name="LEntegreCPU">
       <property name="text">
-       <string>IPTAL</string>
+       <string>Entegre CPU VAR/YOK?</string>
       </property>
      </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="LEEntegreCPU"/>
     </item>
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>LEMarka</tabstop>
+  <tabstop>LEModelNo</tabstop>
+  <tabstop>LESoketTipi</tabstop>
+  <tabstop>LEHizi</tabstop>
+  <tabstop>LECekirdekSayisi</tabstop>
+  <tabstop>LEOnbellek</tabstop>
+  <tabstop>LEBellekTuru</tabstop>
+  <tabstop>LEGucTuketimi</tabstop>
+  <tabstop>LEEntegreCPU</tabstop>
+  <tabstop>PBKaydet</tabstop>
+  <tabstop>PBIptal</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOIslemciTanimlamaFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>48</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOIslemciTanimlamaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>265</x>
+     <y>358</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -19,49 +19,25 @@
      <x>9</x>
      <y>9</y>
      <width>235</width>
-     <height>291</height>
+     <height>238</height>
     </rect>
    </property>
    <property name="title">
     <string>Monitör Bölümü</string>
    </property>
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="0" colspan="2">
-     <widget class="QGroupBox" name="GBMarkalar">
-      <property name="title">
-       <string>Markalar</string>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="LMarka">
+      <property name="text">
+       <string>MARKA:</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBAsus">
-         <property name="text">
-          <string>ASUS</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBSamsung">
-         <property name="text">
-          <string>SAMSUNG</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QRadioButton" name="RBMSI">
-         <property name="text">
-          <string>MSI</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QRadioButton" name="RBLG">
-         <property name="text">
-          <string>LG</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <property name="buddy">
+       <cstring>LEMarka</cstring>
+      </property>
      </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="LEMarka"/>
     </item>
     <item row="1" column="0">
      <widget class="QLabel" name="LModelNo">
@@ -115,7 +91,7 @@
     <item row="4" column="1">
      <widget class="QLineEdit" name="LEBoyut"/>
     </item>
-    <item row="5" column="0" rowspan="2">
+    <item row="5" column="0">
      <widget class="QLabel" name="LCozunurluk">
       <property name="text">
        <string>ÇÖZÜNÜRLÜK:</string>
@@ -128,10 +104,7 @@
     <item row="5" column="1">
      <widget class="QLineEdit" name="LECozunurluk"/>
     </item>
-    <item row="6" column="1" rowspan="2">
-     <widget class="QLineEdit" name="LERenk"/>
-    </item>
-    <item row="7" column="0">
+    <item row="6" column="0">
      <widget class="QLabel" name="LRenk">
       <property name="text">
        <string>RENK:</string>
@@ -141,14 +114,17 @@
       </property>
      </widget>
     </item>
-    <item row="8" column="0">
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="LERenk"/>
+    </item>
+    <item row="7" column="0">
      <widget class="QPushButton" name="PBKaydet">
       <property name="text">
        <string>KAYDET</string>
       </property>
      </widget>
     </item>
-    <item row="8" column="1">
+    <item row="7" column="1">
      <widget class="QPushButton" name="PBIptal">
       <property name="text">
        <string>IPTAL</string>
@@ -159,10 +135,7 @@
   </widget>
  </widget>
  <tabstops>
-  <tabstop>RBAsus</tabstop>
-  <tabstop>RBMSI</tabstop>
-  <tabstop>RBSamsung</tabstop>
-  <tabstop>RBLG</tabstop>
+  <tabstop>LEMarka</tabstop>
   <tabstop>LEModelNo</tabstop>
   <tabstop>LHDMISayisi_2</tabstop>
   <tabstop>LEYenilemeHizi</tabstop>
@@ -173,5 +146,38 @@
   <tabstop>PBIptal</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOMonitorTanimlamaFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>37</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOMonitorTanimlamaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
