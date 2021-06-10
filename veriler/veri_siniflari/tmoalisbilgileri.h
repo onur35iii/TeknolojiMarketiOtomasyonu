@@ -20,13 +20,13 @@ public:
 
 signals:
     void IdDegisti(const Idturu &value);
-    void AlisFiyatiDegisti(const Parabirimi &value);
-    void AlisMiktariDegisti(const qint32 &value);
+    void AlisFiyatiDegisti(const Parabirimi value);
+    void AlisMiktariDegisti(const qint32 value);
 
 public slots:
     void setId(const Idturu &value);
-    void setAlisFiyati(const Parabirimi &value);
-    void setAlisMiktari(const qint32 &value);
+    void setAlisFiyati(const Parabirimi value);
+    void setAlisMiktari(const qint32 value);
 private:
     Idturu AlisId;
     Parabirimi AlisFiyati;

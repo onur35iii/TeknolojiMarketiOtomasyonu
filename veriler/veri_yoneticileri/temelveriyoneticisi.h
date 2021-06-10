@@ -119,7 +119,7 @@ public:
     template<class H, class M>
     friend QDataStream &operator<<(QDataStream &stream, TemelVeriYoneticisi<H,M>&veri);
     template<class F, class B>
-    friend QDataStream &operator<<(QDataStream &stream, TemelVeriYoneticisi<F,B>&veri);
+    friend QDataStream &operator>>(QDataStream &stream, TemelVeriYoneticisi<F,B>&veri);
 
 };
 

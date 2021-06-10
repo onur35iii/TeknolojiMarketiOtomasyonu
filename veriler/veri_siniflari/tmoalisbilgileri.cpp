@@ -23,7 +23,7 @@ Parabirimi TMOAlisBilgileri::getAlisFiyati() const
     return AlisFiyati;
 }
 
-void TMOAlisBilgileri::setAlisFiyati(const Parabirimi &value)
+void TMOAlisBilgileri::setAlisFiyati(const Parabirimi value)
 {
     if(value==AlisFiyati)
       AlisFiyati = value;
@@ -37,7 +37,7 @@ qint32 TMOAlisBilgileri::getAlisMiktari() const
     return AlisMiktari;
 }
 
-void TMOAlisBilgileri::setAlisMiktari(const qint32 &value)
+void TMOAlisBilgileri::setAlisMiktari(const qint32 value)
 {
     if(value==AlisMiktari)
       AlisMiktari = value;

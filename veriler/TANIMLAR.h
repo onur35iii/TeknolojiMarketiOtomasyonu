@@ -7,7 +7,7 @@
 #include <QTime>
 
 typedef quint64 Idturu;
-typedef qint32 Tamsayi ;
+typedef quint32 Tamsayi ;
 
 typedef double Reelsayi;
 typedef float   Parabirimi;
@@ -116,7 +116,8 @@ QDataStream &operator>>(QDataStream &stream, TMOToplamaBilgisayarSatisBilgileriP
 QDataStream &operator<<(QDataStream &stream, const TMOToplamaBilgisayarSatisFaturasiPtr &veri);
 QDataStream &operator>>(QDataStream &stream, TMOToplamaBilgisayarSatisFaturasiPtr &veri);
 
-
+QDataStream &operator<<(QDataStream &stream, const TMOMagazaBilgileriPtr &veri);
+QDataStream &operator>>(QDataStream &stream, TMOMagazaBilgileriPtr &veri);
 
 
 #endif // TANIMLAR_H

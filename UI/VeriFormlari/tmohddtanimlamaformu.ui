@@ -19,51 +19,24 @@
      <x>9</x>
      <y>9</y>
      <width>262</width>
-     <height>265</height>
+     <height>212</height>
     </rect>
    </property>
    <property name="title">
     <string>HDD Bölümü</string>
    </property>
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="0" colspan="2">
-     <widget class="QGroupBox" name="GBMarkalar">
-      <property name="title">
-       <string>Markalar</string>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="LMarka">
+      <property name="text">
+       <string>MARKA</string>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="0">
-        <widget class="QRadioButton" name="RBSeagate">
-         <property name="text">
-          <string>SEAGATE</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QRadioButton" name="RBSamsung">
-         <property name="text">
-          <string>SAMSUNG</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QRadioButton" name="RBToshiba">
-         <property name="text">
-          <string>TOSHIBA</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QRadioButton" name="RBDell">
-         <property name="text">
-          <string>DELL</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <property name="buddy">
+       <cstring>LEMarka</cstring>
+      </property>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="1" column="0" colspan="2">
      <widget class="QLabel" name="LBaglantiArayuzu">
       <property name="text">
        <string>BAĞLANTI ARAYÜZÜ:</string>
@@ -73,7 +46,7 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="1">
+    <item row="1" column="2">
      <widget class="QLineEdit" name="LEBaglantiArayuzu"/>
     </item>
     <item row="2" column="0">
@@ -86,7 +59,7 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="2" column="2">
      <widget class="QLineEdit" name="LEKapasitesi"/>
     </item>
     <item row="3" column="0">
@@ -99,7 +72,7 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="1">
+    <item row="3" column="2">
      <widget class="QLineEdit" name="LEOnbellek"/>
     </item>
     <item row="4" column="0">
@@ -112,7 +85,7 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="1">
+    <item row="4" column="2">
      <widget class="QLineEdit" name="LEDonusHizi"/>
     </item>
     <item row="5" column="0">
@@ -125,7 +98,7 @@
       </property>
      </widget>
     </item>
-    <item row="5" column="1">
+    <item row="5" column="2">
      <widget class="QLineEdit" name="LEBoyutu"/>
     </item>
     <item row="6" column="0">
@@ -135,21 +108,21 @@
       </property>
      </widget>
     </item>
-    <item row="6" column="1">
+    <item row="6" column="2">
      <widget class="QPushButton" name="PBIptal">
       <property name="text">
        <string>IPTAL</string>
       </property>
      </widget>
     </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="LEMarka"/>
+    </item>
    </layout>
   </widget>
  </widget>
  <tabstops>
-  <tabstop>RBSeagate</tabstop>
-  <tabstop>RBToshiba</tabstop>
-  <tabstop>RBSamsung</tabstop>
-  <tabstop>RBDell</tabstop>
+  <tabstop>LEMarka</tabstop>
   <tabstop>LEBaglantiArayuzu</tabstop>
   <tabstop>LEKapasitesi</tabstop>
   <tabstop>LEOnbellek</tabstop>
@@ -159,5 +132,38 @@
   <tabstop>PBIptal</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOHDDTanimlamaFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOHDDTanimlamaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
