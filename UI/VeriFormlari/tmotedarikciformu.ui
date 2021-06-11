@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TMOTedarikciFormu</class>
+ <widget class="QDialog" name="TMOTedarikciFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>518</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="LTedarikciAdi">
+     <property name="text">
+      <string>Tedarikçi Adı:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QLineEdit" name="LETedarikciAdi"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="LTedarikciAdresi">
+     <property name="text">
+      <string>Tedarikçi Adresi:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QPlainTextEdit" name="PTTedarikciAdresi"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="TedarikciTelefonu">
+     <property name="text">
+      <string>Tedarikçi Telefonu:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2">
+    <widget class="QLineEdit" name="LETedarikciTelefonu"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="TedarikciYetkiliKisi">
+     <property name="text">
+      <string>Tedarikçi Yetkili Kişi:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <widget class="QLineEdit" name="LETedarikciYetkiliKisi"/>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QPushButton" name="PBKaydet">
+     <property name="text">
+      <string>KAYDET</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="PBIptal">
+     <property name="text">
+      <string>IPTAL</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

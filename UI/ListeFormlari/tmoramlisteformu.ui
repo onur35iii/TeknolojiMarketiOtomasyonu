@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TMORAMListeFormu</class>
+ <widget class="QDialog" name="TMORAMListeFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>854</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_6">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="GPAramaBolumu">
+     <property name="title">
+      <string>RAM ARAMA BÖLÜMÜ</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="GPParcaModeli">
+        <property name="title">
+         <string>Parça Modeli</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QLabel" name="LPModeliDeger">
+           <property name="text">
+            <string>Değer:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="LEPModeliDeger"/>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QGroupBox" name="GPPModeliFiltreTuru">
+           <property name="title">
+            <string>Filtre Türü</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="RBPModeliFTIleBaslayan">
+              <property name="text">
+               <string>İle Başlayan</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QRadioButton" name="RBPModeliIFTIleBiten">
+              <property name="text">
+               <string>İle Biten</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QRadioButton" name="RBPModeliFTIceren">
+              <property name="text">
+               <string>İçeren</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="PBAra">
+        <property name="text">
+         <string>ARA</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="GPParcaMarkasi">
+        <property name="title">
+         <string>Parça Markası</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="LPMarkasiDeger">
+           <property name="text">
+            <string>Değer:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="LEPMarkasiDeger"/>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QGroupBox" name="GPPMarkasiFiltreTuru">
+           <property name="title">
+            <string>Filtre Türü</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="RBPMarkasiFTIleBaslayan">
+              <property name="text">
+               <string>İle Başlayan</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QRadioButton" name="RBPMarkasiFTIleBiten">
+              <property name="text">
+               <string>İle Biten</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QRadioButton" name="RBPMarkasiFTIceren">
+              <property name="text">
+               <string>İçeren</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="PBKapat">
+        <property name="text">
+         <string>KAPAT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="TWTablo"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

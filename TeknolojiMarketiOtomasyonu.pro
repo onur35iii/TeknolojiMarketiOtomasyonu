@@ -9,6 +9,18 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    UI/ListeFormlari/tmoanakartlisteformu.cpp \
+    UI/ListeFormlari/tmofarelisteformu.cpp \
+    UI/ListeFormlari/tmogpulisteformu.cpp \
+    UI/ListeFormlari/tmoguckaynagilisteformu.cpp \
+    UI/ListeFormlari/tmohddlisteformu.cpp \
+    UI/ListeFormlari/tmoislemcilisteformu.cpp \
+    UI/ListeFormlari/tmokasalisteformu.cpp \
+    UI/ListeFormlari/tmoklavyelisteformu.cpp \
+    UI/ListeFormlari/tmomonitorlisteformu.cpp \
+    UI/ListeFormlari/tmoparcalisteformu.cpp \
+    UI/ListeFormlari/tmoramlisteformu.cpp \
+    UI/VeriFormlari/Widgetlar/tmotedarikciduzenleme.cpp \
     UI/VeriFormlari/tmogputanimlamaformu.cpp \
     UI/VeriFormlari/tmoguckaynagitanimlamaformu.cpp \
     UI/VeriFormlari/tmohddtanimlamaformu.cpp \
@@ -17,6 +29,7 @@ SOURCES += \
     UI/VeriFormlari/tmoklavyetanimlamaformu.cpp \
     UI/VeriFormlari/tmomonitortanimlamaformu.cpp \
     UI/VeriFormlari/tmoramtanimlamaformu.cpp \
+    UI/VeriFormlari/tmotedarikciformu.cpp \
     UI/VeriFormlari/tmoyenianakarttanimlamaformu.cpp \
     UI/VeriFormlari/tmoyenifaretanimlamaformu.cpp \
     main.cpp \
@@ -62,6 +75,18 @@ SOURCES += \
     veriler/veri_yoneticileri/tmotoplamabilgisayarsatisfaturasiyoneticisi.cpp
 
 HEADERS += \
+    UI/ListeFormlari/tmoanakartlisteformu.h \
+    UI/ListeFormlari/tmofarelisteformu.h \
+    UI/ListeFormlari/tmogpulisteformu.h \
+    UI/ListeFormlari/tmoguckaynagilisteformu.h \
+    UI/ListeFormlari/tmohddlisteformu.h \
+    UI/ListeFormlari/tmoislemcilisteformu.h \
+    UI/ListeFormlari/tmokasalisteformu.h \
+    UI/ListeFormlari/tmoklavyelisteformu.h \
+    UI/ListeFormlari/tmomonitorlisteformu.h \
+    UI/ListeFormlari/tmoparcalisteformu.h \
+    UI/ListeFormlari/tmoramlisteformu.h \
+    UI/VeriFormlari/Widgetlar/tmotedarikciduzenleme.h \
     UI/VeriFormlari/tmogputanimlamaformu.h \
     UI/VeriFormlari/tmoguckaynagitanimlamaformu.h \
     UI/VeriFormlari/tmohddtanimlamaformu.h \
@@ -70,6 +95,7 @@ HEADERS += \
     UI/VeriFormlari/tmoklavyetanimlamaformu.h \
     UI/VeriFormlari/tmomonitortanimlamaformu.h \
     UI/VeriFormlari/tmoramtanimlamaformu.h \
+    UI/VeriFormlari/tmotedarikciformu.h \
     UI/VeriFormlari/tmoyenianakarttanimlamaformu.h \
     UI/VeriFormlari/tmoyenifaretanimlamaformu.h \
     tmoanapencere.h \
@@ -116,6 +142,18 @@ HEADERS += \
     veriler/veri_yoneticileri/tmotoplamabilgisayarsatisfaturasiyoneticisi.h
 
 FORMS += \
+    UI/ListeFormlari/tmoanakartlisteformu.ui \
+    UI/ListeFormlari/tmofarelisteformu.ui \
+    UI/ListeFormlari/tmogpulisteformu.ui \
+    UI/ListeFormlari/tmoguckaynagilisteformu.ui \
+    UI/ListeFormlari/tmohddlisteformu.ui \
+    UI/ListeFormlari/tmoislemcilisteformu.ui \
+    UI/ListeFormlari/tmokasalisteformu.ui \
+    UI/ListeFormlari/tmoklavyelisteformu.ui \
+    UI/ListeFormlari/tmomonitorlisteformu.ui \
+    UI/ListeFormlari/tmoparcalisteformu.ui \
+    UI/ListeFormlari/tmoramlisteformu.ui \
+    UI/VeriFormlari/Widgetlar/tmotedarikciduzenleme.ui \
     UI/VeriFormlari/tmogputanimlamaformu.ui \
     UI/VeriFormlari/tmoguckaynagitanimlamaformu.ui \
     UI/VeriFormlari/tmohddtanimlamaformu.ui \
@@ -124,6 +162,7 @@ FORMS += \
     UI/VeriFormlari/tmoklavyetanimlamaformu.ui \
     UI/VeriFormlari/tmomonitortanimlamaformu.ui \
     UI/VeriFormlari/tmoramtanimlamaformu.ui \
+    UI/VeriFormlari/tmotedarikciformu.ui \
     UI/VeriFormlari/tmoyenianakarttanimlamaformu.ui \
     UI/VeriFormlari/tmoyenifaretanimlamaformu.ui \
     tmoanapencere.ui

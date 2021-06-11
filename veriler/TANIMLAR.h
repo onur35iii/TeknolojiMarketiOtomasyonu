@@ -17,7 +17,19 @@ typedef QString Metin ;
 typedef QDate Tarih;
 typedef QTime Saat ;
 typedef QDateTime TarihSaat ;
-
+typedef enum
+{
+    PTAnakart=1,
+    PTIslemci=2,
+    PTGPU=4,
+    PTRAM=8,
+    PTHDD=16,
+    PTKasa=32,
+    PTGucKaynagi=64,
+    PTMonitor=128,
+    PTKlavye=256,
+    PTFare=512
+} ParcaTuru ;
 
 // POİNTER TANIMLARI
 class TMOAlisBilgileri;
