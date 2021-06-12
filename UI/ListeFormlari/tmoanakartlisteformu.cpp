@@ -60,37 +60,34 @@ void TMOAnakartListeFormu::ListeGuncelle()
 
         ui->TWTablo->setItem(i, 1, hucre);
 
-       /* hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getId());
-        ui->TWTablo->setItem(i, 2, hucre);*/
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getAnakartModelNo());
-        ui->TWTablo->setItem(i, 3, hucre);
+        ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getAnakartSoketTipi());
-        ui->TWTablo->setItem(i, 4, hucre);
+        ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getAnakartChipseti());
-        ui->TWTablo->setItem(i, 5, hucre);
+        ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getAnakartRamTipi());
-        ui->TWTablo->setItem(i, 6, hucre);
+        ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getAnakartVgaSlotu());
-        ui->TWTablo->setItem(i, 7, hucre);
+        ui->TWTablo->setItem(i, 6, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getAnakartBoyutu());
-        ui->TWTablo->setItem(i, 8, hucre);
+        ui->TWTablo->setItem(i, 7, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 9, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 8, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -110,7 +107,7 @@ void TMOAnakartListeFormu::ListeGuncelle()
        });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 15, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 9, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                 TMOAnakartListeFormu form;

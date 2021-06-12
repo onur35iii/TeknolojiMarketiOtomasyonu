@@ -3,8 +3,8 @@
 #include<veriler/TANIMLAR.h>
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmohdd.h>
-#include<UI/ListeFormlari/tmohddlisteformu.h>
-
+#include<UI/VeriFormlari/tmohddtanimlamaformu.h>
+#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -106,11 +106,11 @@ void TMOHDDListeFormu::ListeGuncelle()
         ui->TWTablo->setCellWidget(i, 9, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOHDDListeFormu form;
+               TMOHDDTanimlamaFormu  form;
                 form.setWindowTitle(tr("%1 Harddisk Bilgilerini Düzenle").arg(veri_i->getHDDAdi()));
-           form.setListe(veri_i);
+          form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 

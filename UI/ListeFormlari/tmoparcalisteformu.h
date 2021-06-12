@@ -26,7 +26,7 @@ public:
     ~TMOParcaListeFormu();
 private slots:
     void on_pushButton_clicked();
-  //  void Ara();
+
 private:
     void ListeGuncelle();
     void aramaYap();

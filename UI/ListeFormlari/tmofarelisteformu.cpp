@@ -3,7 +3,8 @@
 #include<veriler/TANIMLAR.h>
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmofare.h>
-#include<UI/ListeFormlari/tmofarelisteformu.h>
+
+#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
 
 #include <QStringList>
 #include <QTableWidgetItem>
@@ -56,33 +57,30 @@ void TMOFareListeFormu::ListeGuncelle()
 
         ui->TWTablo->setItem(i, 1, hucre);
 
-        hucre = new QTableWidgetItem();
-//* hucre->setText(liste[i]->getId());
-        ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareAdi());
-        ui->TWTablo->setItem(i, 3, hucre);
+        ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareModeli());
-        ui->TWTablo->setItem(i, 4, hucre);
+        ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareRenk());
+        ui->TWTablo->setItem(i, 4, hucre);
+
+        hucre = new QTableWidgetItem();
+        hucre->setText(tr("%1").arg(liste[i]->getFareDPI()));
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-//* hucre->setText(liste[i]->getFareDPI());
-        ui->TWTablo->setItem(i, 6, hucre);
-
-        hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareBaglantiTuru());
-        ui->TWTablo->setItem(i, 7, hucre);
+        ui->TWTablo->setItem(i, 6, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 8, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 7, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -104,11 +102,11 @@ void TMOFareListeFormu::ListeGuncelle()
         ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOFareListeFormu form;
+                 TMOYeniFareTanimlamaFormu form;
                 form.setWindowTitle(tr("%1 Fare Bilgilerini Düzenle").arg(veri_i->getFareAdi()));
-   //*             form.setListe(veri_i);
+            form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 

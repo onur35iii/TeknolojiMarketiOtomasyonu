@@ -20,7 +20,6 @@ public:
     void setListe(const TMOHDDYoneticisi::VeriListesi &value);
 private slots:
 void on_pushButton_clicked();
-//void Ara();
 
 private:
     void ListeGuncelle();

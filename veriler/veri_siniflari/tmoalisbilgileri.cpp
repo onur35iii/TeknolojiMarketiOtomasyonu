@@ -44,7 +44,7 @@ void TMOAlisBilgileri::setAlisMiktari(const qint32 value)
        return;
     emit AlisMiktariDegisti(AlisMiktari);
 }
-QDataStream &operator<<(QDataStream &stream,TMOAlisBilgileriPtr &veri){
+QDataStream &operator<<(QDataStream &stream,TMOAlisBilgileriPtr const &veri){
     stream<<veri->getId()<<veri->getAlisFiyati()<<veri->getAlisMiktari();
     return stream;
 

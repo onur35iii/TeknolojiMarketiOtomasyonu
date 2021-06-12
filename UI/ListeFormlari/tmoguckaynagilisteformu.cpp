@@ -4,7 +4,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmoguckaynagi.h>
 #include<UI/ListeFormlari/tmoguckaynagilisteformu.h>
-
+#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>

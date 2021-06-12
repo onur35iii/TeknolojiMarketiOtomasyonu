@@ -4,7 +4,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmofare.h>
 #include<UI/ListeFormlari/tmofarelisteformu.h>
-
+#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -14,9 +14,15 @@ TMOParcaListeFormu::TMOParcaListeFormu(QWidget *parent) :
     ui(new Ui::TMOParcaListeFormu)
 {
     ui->setupUi(this);
+    //aramaYap();
 }
 
 TMOParcaListeFormu::~TMOParcaListeFormu()
 {
     delete ui;
+}
+
+void TMOParcaListeFormu::on_pushButton_clicked()
+{
+   // aramaYap();
 }

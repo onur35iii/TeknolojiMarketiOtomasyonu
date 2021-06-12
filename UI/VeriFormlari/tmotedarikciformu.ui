@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>518</width>
-    <height>416</height>
+    <width>731</width>
+    <height>413</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,6 +19,9 @@
      <property name="text">
       <string>Tedarikçi Adı:</string>
      </property>
+     <property name="buddy">
+      <cstring>LETedarikciAdi</cstring>
+     </property>
     </widget>
    </item>
    <item row="0" column="1" colspan="2">
@@ -28,6 +31,9 @@
     <widget class="QLabel" name="LTedarikciAdresi">
      <property name="text">
       <string>Tedarikçi Adresi:</string>
+     </property>
+     <property name="buddy">
+      <cstring>PTTedarikciAdresi</cstring>
      </property>
     </widget>
    </item>
@@ -39,6 +45,9 @@
      <property name="text">
       <string>Tedarikçi Telefonu:</string>
      </property>
+     <property name="buddy">
+      <cstring>LETedarikciTelefonu</cstring>
+     </property>
     </widget>
    </item>
    <item row="2" column="1" colspan="2">
@@ -48,6 +57,9 @@
     <widget class="QLabel" name="TedarikciYetkiliKisi">
      <property name="text">
       <string>Tedarikçi Yetkili Kişi:</string>
+     </property>
+     <property name="buddy">
+      <cstring>LETedarikciYetkiliKisi</cstring>
      </property>
     </widget>
    </item>
@@ -71,5 +83,38 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>95</x>
+     <y>429</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>539</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>643</x>
+     <y>438</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

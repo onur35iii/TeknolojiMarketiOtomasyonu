@@ -36,6 +36,10 @@ private slots:
 
     void on_actionFare_triggered();
 
+    void on_actionTedarik_iler_triggered();
+
+    void on_actionTedarik_i_Ekle_triggered();
+
 private:
     Ui::TMOAnaPencere *ui;
 };
