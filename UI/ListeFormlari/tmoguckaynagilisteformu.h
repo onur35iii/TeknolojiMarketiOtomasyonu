@@ -19,7 +19,7 @@ public:
 
 private slots:
     void on_pushButton_clicked();
-    void Ara();
+   // void Ara();
 
 private:
     void ListeGuncelle();

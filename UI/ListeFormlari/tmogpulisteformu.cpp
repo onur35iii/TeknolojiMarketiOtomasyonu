@@ -59,7 +59,7 @@ void TMOGPUListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-//**        hucre->setText(liste[i]->getId());
+        hucre->setText(tr("%1").arg(liste[i]->getId()));
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
@@ -75,7 +75,7 @@ void TMOGPUListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-  //**  hucre->setText(liste[i]->getGPUSlotSayisi());
+        hucre->setText(tr("%1").arg(liste[i]->getGPUSlotSayisi()));
         ui->TWTablo->setItem(i, 6, hucre);
 
         hucre = new QTableWidgetItem();
@@ -83,7 +83,7 @@ void TMOGPUListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 7, hucre);
 
         hucre = new QTableWidgetItem();
- //**   hucre->setText(liste[i]->getGPUBoyutu());
+        hucre->setText(tr("%1").arg(liste[i]->getGPUBoyutu()));
         ui->TWTablo->setItem(i, 7, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);

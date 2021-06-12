@@ -15,6 +15,27 @@ public:
     TMOAnaPencere(QWidget *parent = nullptr);
     ~TMOAnaPencere();
 
+private slots:
+    void on_actionAnakart_triggered();
+
+    void on_actionKasalar_triggered();
+
+    void on_action_lemci_triggered();
+
+    void on_actionRAM_triggered();
+
+    void on_actionHDD_triggered();
+
+    void on_actionGPU_triggered();
+
+    void on_actionG_Kayna_triggered();
+
+    void on_actionMonit_r_triggered();
+
+    void on_actionKlavye_triggered();
+
+    void on_actionFare_triggered();
+
 private:
     Ui::TMOAnaPencere *ui;
 };

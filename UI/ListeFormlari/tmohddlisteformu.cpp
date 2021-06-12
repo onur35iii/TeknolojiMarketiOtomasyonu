@@ -108,7 +108,7 @@ void TMOHDDListeFormu::ListeGuncelle()
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                 TMOHDDListeFormu form;
                 form.setWindowTitle(tr("%1 Harddisk Bilgilerini Düzenle").arg(veri_i->getHDDAdi()));
-              //  form.setListe(veri_i);
+           form.setListe(veri_i);
                 if(form.exec()==QDialog::Accepted){
                     form.getListe();
                     this->ListeGuncelle();

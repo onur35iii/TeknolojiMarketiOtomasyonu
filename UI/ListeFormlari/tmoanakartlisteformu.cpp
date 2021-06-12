@@ -52,14 +52,15 @@ void TMOAnakartListeFormu::ListeGuncelle()
               <<  tr("Anakart RAM Tipi ") << tr("Anakart VGA Slotu") << tr("Anakart Boyutu");
     ui->TWTablo->setHorizontalHeaderLabels(basliklar);
 
-    for(int i=0; i<liste.length(); i++){
+    for(int i=0; i<liste.length(); i++)
+    {
         QTableWidgetItem *hucre = new QTableWidgetItem();
-       hucre->setText(tr("%1").arg(liste[i]->getId()));
+        hucre->setText(tr("%1").arg(liste[i]->getId()));
         ui->TWTablo->setItem(i, 0, hucre);
 
         ui->TWTablo->setItem(i, 1, hucre);
 
- /*   hucre = new QTableWidgetItem();
+       /* hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getId());
         ui->TWTablo->setItem(i, 2, hucre);*/
 
@@ -113,8 +114,8 @@ void TMOAnakartListeFormu::ListeGuncelle()
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                 TMOAnakartListeFormu form;
-                form.setWindowTitle(tr("%1 Anakart Bilgilerini Düzenle").arg(veri_i->getAnakartAdi()));
- //*****            form.setListe(veri_i);
+                form.setWindowTitle(veri_i->getAnakartAdi());
+            //     form.setListe(veri_i);
                 if(form.exec()==QDialog::Accepted){
                     form.getListe();
                     this->ListeGuncelle();
