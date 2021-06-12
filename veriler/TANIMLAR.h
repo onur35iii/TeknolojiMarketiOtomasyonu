@@ -51,6 +51,7 @@ class TMOSatisFaturasi;
 class TMOTedarikciBilgileri;
 class TMOToplamaBilgisayarSatisBilgileri;
 class TMOToplamaBilgisayarSatisFaturasi;
+class TMOTedarikci;
 
 
 #include <memory>

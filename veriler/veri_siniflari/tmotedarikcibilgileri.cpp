@@ -79,7 +79,9 @@ QDataStream &operator>>(QDataStream &stream, TMOTedarikciBilgileriPtr &veri){
     Metin TedarikciAdresi;
     Metin TedarikciTelefonNo;
     Metin TedarikciYetkiliKisi;
+
     stream >> TedarikciId>>TedarikciAdi>>TedarikciAdresi>>TedarikciTelefonNo>>TedarikciYetkiliKisi;
+
     veri=std::make_shared<TMOTedarikciBilgileri>();
     veri->setId(TedarikciId);
     veri->setTedarikciAdi(TedarikciAdi);

@@ -20,6 +20,7 @@ SOURCES += \
     UI/ListeFormlari/tmomonitorlisteformu.cpp \
     UI/ListeFormlari/tmoparcalisteformu.cpp \
     UI/ListeFormlari/tmoramlisteformu.cpp \
+    UI/ListeFormlari/tmotedarikcilistewidget.cpp \
     UI/VeriFormlari/Widgetlar/tmotedarikciduzenleme.cpp \
     UI/VeriFormlari/tmogputanimlamaformu.cpp \
     UI/VeriFormlari/tmoguckaynagitanimlamaformu.cpp \
@@ -86,6 +87,7 @@ HEADERS += \
     UI/ListeFormlari/tmomonitorlisteformu.h \
     UI/ListeFormlari/tmoparcalisteformu.h \
     UI/ListeFormlari/tmoramlisteformu.h \
+    UI/ListeFormlari/tmotedarikcilistewidget.h \
     UI/VeriFormlari/Widgetlar/tmotedarikciduzenleme.h \
     UI/VeriFormlari/tmogputanimlamaformu.h \
     UI/VeriFormlari/tmoguckaynagitanimlamaformu.h \
@@ -153,6 +155,7 @@ FORMS += \
     UI/ListeFormlari/tmomonitorlisteformu.ui \
     UI/ListeFormlari/tmoparcalisteformu.ui \
     UI/ListeFormlari/tmoramlisteformu.ui \
+    UI/ListeFormlari/tmotedarikcilistewidget.ui \
     UI/VeriFormlari/Widgetlar/tmotedarikciduzenleme.ui \
     UI/VeriFormlari/tmogputanimlamaformu.ui \
     UI/VeriFormlari/tmoguckaynagitanimlamaformu.ui \

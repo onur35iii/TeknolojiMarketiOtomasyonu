@@ -24,5 +24,15 @@ TMOParcaListeFormu::~TMOParcaListeFormu()
 
 void TMOParcaListeFormu::on_pushButton_clicked()
 {
-   // aramaYap();
+    // aramaYap();
+}
+
+void TMOParcaListeFormu::ListeGuncelle()
+{
+
+}
+
+void TMOParcaListeFormu::aramaYap()
+{
+
 }

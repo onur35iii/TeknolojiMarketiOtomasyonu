@@ -121,6 +121,7 @@ QDataStream &operator>>(QDataStream &stream,TMOAnakartPtr &veri){
     Metin AnakartRamTipi;
     Metin AnakartVgaSlotu;
     Metin AnakartBoyutu;
+
     stream >> AnakartId>>AnakartAdi>>AnakartModelNo>>AnakartSoketTipi>>AnakartChipseti>>AnakartRamTipi>>AnakartVgaSlotu>>AnakartBoyutu;
     veri=std::make_shared<TMOAnakart>();
     veri->setId(AnakartId);

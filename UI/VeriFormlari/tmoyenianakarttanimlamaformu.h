@@ -22,5 +22,5 @@ private:
     Ui::TMOYeniAnakartTanimlamaFormu *ui;
     TMOAnakartPtr veri;
 };
-//git
+
 #endif // TMOYENIANAKARTTANIMLAMAFORMU_H

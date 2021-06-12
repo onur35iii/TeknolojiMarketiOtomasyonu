@@ -25,50 +25,25 @@
    </property>
    <widget class="QMenu" name="menuKasa">
     <property name="title">
-     <string>PARÇALAR</string>
+     <string>Parça Ekleme Bölümü</string>
     </property>
-    <widget class="QMenu" name="menuPar_a_Ekleme">
-     <property name="title">
-      <string>Parça Ekleme</string>
-     </property>
-     <addaction name="actionAnakart_2"/>
-     <addaction name="actionFare_2"/>
-     <addaction name="actionGPU_2"/>
-     <addaction name="actionG_Kayna_2"/>
-     <addaction name="actionHDD_2"/>
-     <addaction name="action_lemci_2"/>
-     <addaction name="actionKasa"/>
-     <addaction name="actionKlavye_2"/>
-     <addaction name="actionMonit_r_2"/>
-     <addaction name="actionRAM_2"/>
-    </widget>
-    <widget class="QMenu" name="menuPar_a_Sil">
-     <property name="title">
-      <string>Parça Sil</string>
-     </property>
-     <addaction name="actionAnakart_3"/>
-     <addaction name="actionFare_3"/>
-     <addaction name="actionGPU_3"/>
-     <addaction name="actionG_Kayna_3"/>
-     <addaction name="actionHDD_3"/>
-     <addaction name="action_lemci_3"/>
-     <addaction name="actionKasa_2"/>
-     <addaction name="actionKlavye_3"/>
-     <addaction name="actionMonit_r_3"/>
-     <addaction name="actionRAM_3"/>
-    </widget>
-    <addaction name="menuPar_a_Ekleme"/>
-    <addaction name="menuPar_a_Sil"/>
-    <addaction name="separator"/>
-    <addaction name="actionPar_alar_Listele"/>
-    <addaction name="actionPar_a_D_zenleme"/>
+    <addaction name="actionAnakart_Ekle"/>
+    <addaction name="actionGPU_Ekle"/>
+    <addaction name="actionG_Kayna_Ekle"/>
+    <addaction name="actionHDD_Ekle"/>
+    <addaction name="actionRAM_Ekle"/>
+    <addaction name="action_lemci_Ekle"/>
+    <addaction name="actionFare_Ekle"/>
+    <addaction name="actionKlavye_Ekle"/>
+    <addaction name="actionMonit_r_Ekle"/>
+    <addaction name="actionKasa_Ekle"/>
    </widget>
    <widget class="QMenu" name="menuTedarik_i">
     <property name="title">
      <string>Tedarikçi Bilgileri</string>
     </property>
-    <addaction name="actionTedarik_iler"/>
     <addaction name="actionTedarik_i_Ekle"/>
+    <addaction name="actionTedarik_iler"/>
    </widget>
    <widget class="QMenu" name="menuPar_a_Fatura">
     <property name="title">
@@ -78,22 +53,16 @@
      <property name="title">
       <string>Alış Faturası</string>
      </property>
-     <addaction name="actionYeni_Fatura_Ekle"/>
-     <addaction name="actionFaturalar"/>
     </widget>
     <widget class="QMenu" name="menuSat_Faturas">
      <property name="title">
       <string>Satış Faturası</string>
      </property>
-     <addaction name="actionYeni_Fatura_Ekle_2"/>
-     <addaction name="actionFaturalar_2"/>
     </widget>
     <widget class="QMenu" name="menuToplama_Bilgisayar_Faturas_2">
      <property name="title">
       <string>Toplama Bilgisayar Faturası</string>
      </property>
-     <addaction name="actionYeni_Fatura_Ekle_3"/>
-     <addaction name="actionFaturalar_3"/>
     </widget>
     <addaction name="menuAl_Faturas"/>
     <addaction name="menuSat_Faturas"/>
@@ -109,88 +78,62 @@
     <property name="title">
      <string>Mağaza</string>
     </property>
-    <addaction name="actionMa_aza_ar"/>
    </widget>
    <addaction name="menuKasa"/>
    <addaction name="menuTedarik_i"/>
+   <addaction name="menuMa_aza_Bilgileri"/>
    <addaction name="menuPar_a_Fatura"/>
    <addaction name="menuPar_a_Uyum_Bilgileri"/>
-   <addaction name="menuMa_aza_Bilgileri"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionPar_a_Al_Faturas">
+  <action name="actionAnakart_Ekle">
    <property name="text">
-    <string>Alış Faturaları</string>
+    <string>Anakart Ekle </string>
    </property>
   </action>
-  <action name="actionPar_a_Sat_Faturas">
+  <action name="actionGPU_Ekle">
    <property name="text">
-    <string> Satış Faturaları</string>
+    <string>GPU Ekle</string>
    </property>
   </action>
-  <action name="actionSat_Faturas">
+  <action name="actionG_Kayna_Ekle">
    <property name="text">
-    <string>Satış Faturası</string>
+    <string>Güç Kaynağı Ekle</string>
    </property>
   </action>
-  <action name="actionMa_aza_ar">
+  <action name="actionHDD_Ekle">
    <property name="text">
-    <string>Mağaza Bilgileri</string>
+    <string>HDD Ekle</string>
    </property>
   </action>
-  <action name="actionKasalar">
+  <action name="actionRAM_Ekle">
    <property name="text">
-    <string>Kasa</string>
+    <string>RAM Ekle</string>
    </property>
   </action>
-  <action name="actionAnakart">
+  <action name="action_lemci_Ekle">
    <property name="text">
-    <string>Anakart</string>
+    <string>İşlemci Ekle</string>
    </property>
   </action>
-  <action name="action_lemci">
+  <action name="actionFare_Ekle">
    <property name="text">
-    <string>İşlemci</string>
+    <string>Fare Ekle</string>
    </property>
   </action>
-  <action name="actionRAM">
+  <action name="actionKlavye_Ekle">
    <property name="text">
-    <string>RAM</string>
+    <string>Klavye Ekle</string>
    </property>
   </action>
-  <action name="actionHDD">
+  <action name="actionMonit_r_Ekle">
    <property name="text">
-    <string>HDD</string>
+    <string>Monitör Ekle</string>
    </property>
   </action>
-  <action name="actionGPU">
+  <action name="actionKasa_Ekle">
    <property name="text">
-    <string>GPU</string>
-   </property>
-  </action>
-  <action name="actionG_Kayna">
-   <property name="text">
-    <string>Güç Kaynağı</string>
-   </property>
-  </action>
-  <action name="actionMonit_r">
-   <property name="text">
-    <string>Monitör</string>
-   </property>
-  </action>
-  <action name="actionKlavye">
-   <property name="text">
-    <string>Klavye</string>
-   </property>
-  </action>
-  <action name="actionFare">
-   <property name="text">
-    <string>Fare</string>
-   </property>
-  </action>
-  <action name="actionTedarik_iler">
-   <property name="text">
-    <string>Tedarikçiler</string>
+    <string>Kasa Ekle</string>
    </property>
   </action>
   <action name="actionTedarik_i_Ekle">
@@ -198,149 +141,9 @@
     <string>Tedarikçi Ekle</string>
    </property>
   </action>
-  <action name="actionYeniPar_a_Al_Faturas">
+  <action name="actionTedarik_iler">
    <property name="text">
-    <string>Yeni  Alış Faturası </string>
-   </property>
-  </action>
-  <action name="actionYeni_Fatura_Ekle">
-   <property name="text">
-    <string>Yeni Fatura Ekle</string>
-   </property>
-  </action>
-  <action name="actionFaturalar">
-   <property name="text">
-    <string>Faturalar</string>
-   </property>
-  </action>
-  <action name="actionYeni_Fatura_Ekle_2">
-   <property name="text">
-    <string>Yeni Fatura Ekle</string>
-   </property>
-  </action>
-  <action name="actionFaturalar_2">
-   <property name="text">
-    <string>Faturalar</string>
-   </property>
-  </action>
-  <action name="actionYeni_Fatura_Ekle_3">
-   <property name="text">
-    <string>Yeni Fatura Ekle</string>
-   </property>
-  </action>
-  <action name="actionFaturalar_3">
-   <property name="text">
-    <string>Faturalar</string>
-   </property>
-  </action>
-  <action name="actionPar_alar_Listele">
-   <property name="text">
-    <string>Parçaları Listele</string>
-   </property>
-  </action>
-  <action name="actionPar_a_D_zenleme">
-   <property name="text">
-    <string>Parça Düzenleme</string>
-   </property>
-  </action>
-  <action name="actionAnakart_2">
-   <property name="text">
-    <string>Anakart</string>
-   </property>
-  </action>
-  <action name="actionFare_2">
-   <property name="text">
-    <string>Fare</string>
-   </property>
-  </action>
-  <action name="actionGPU_2">
-   <property name="text">
-    <string>GPU</string>
-   </property>
-  </action>
-  <action name="actionG_Kayna_2">
-   <property name="text">
-    <string>Güç Kaynağı</string>
-   </property>
-  </action>
-  <action name="actionHDD_2">
-   <property name="text">
-    <string>HDD</string>
-   </property>
-  </action>
-  <action name="action_lemci_2">
-   <property name="text">
-    <string>İşlemci</string>
-   </property>
-  </action>
-  <action name="actionKasa">
-   <property name="text">
-    <string>Kasa</string>
-   </property>
-  </action>
-  <action name="actionKlavye_2">
-   <property name="text">
-    <string>Klavye</string>
-   </property>
-  </action>
-  <action name="actionMonit_r_2">
-   <property name="text">
-    <string>Monitör</string>
-   </property>
-  </action>
-  <action name="actionRAM_2">
-   <property name="text">
-    <string>RAM</string>
-   </property>
-  </action>
-  <action name="actionAnakart_3">
-   <property name="text">
-    <string>Anakart</string>
-   </property>
-  </action>
-  <action name="actionFare_3">
-   <property name="text">
-    <string>Fare</string>
-   </property>
-  </action>
-  <action name="actionGPU_3">
-   <property name="text">
-    <string>GPU</string>
-   </property>
-  </action>
-  <action name="actionG_Kayna_3">
-   <property name="text">
-    <string>Güç Kaynağı</string>
-   </property>
-  </action>
-  <action name="actionHDD_3">
-   <property name="text">
-    <string>HDD</string>
-   </property>
-  </action>
-  <action name="action_lemci_3">
-   <property name="text">
-    <string>İşlemci</string>
-   </property>
-  </action>
-  <action name="actionKasa_2">
-   <property name="text">
-    <string>Kasa</string>
-   </property>
-  </action>
-  <action name="actionKlavye_3">
-   <property name="text">
-    <string>Klavye</string>
-   </property>
-  </action>
-  <action name="actionMonit_r_3">
-   <property name="text">
-    <string>Monitör</string>
-   </property>
-  </action>
-  <action name="actionRAM_3">
-   <property name="text">
-    <string>RAM</string>
+    <string>Tedarikçiler</string>
    </property>
   </action>
  </widget>

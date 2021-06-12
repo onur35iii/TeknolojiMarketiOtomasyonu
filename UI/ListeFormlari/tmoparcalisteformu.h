@@ -31,7 +31,8 @@ private:
     void ListeGuncelle();
     void aramaYap();
     Ui::TMOParcaListeFormu *ui;
-    //TKNparcaBilgisiYoneticisi::Verilistesi liste;
+   TMOAnakartYoneticisi::VeriListesi liste;
+
 };
 
 #endif // TMOPARCALISTEFORMU_H
