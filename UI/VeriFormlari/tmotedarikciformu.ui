@@ -6,115 +6,68 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>731</width>
-    <height>413</height>
+    <width>781</width>
+    <height>643</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <widget class="QLabel" name="LTedarikciAdi">
-     <property name="text">
-      <string>Tedarikçi Adı:</string>
+   <item row="0" column="0" rowspan="3">
+    <widget class="QTabWidget" name="tabTedarikciIslemleri">
+     <property name="tabPosition">
+      <enum>QTabWidget::South</enum>
      </property>
-     <property name="buddy">
-      <cstring>LETedarikciAdi</cstring>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
      </property>
-    </widget>
-   </item>
-   <item row="0" column="1" colspan="2">
-    <widget class="QLineEdit" name="LETedarikciAdi"/>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="LTedarikciAdresi">
-     <property name="text">
-      <string>Tedarikçi Adresi:</string>
+     <property name="currentIndex">
+      <number>-1</number>
      </property>
-     <property name="buddy">
-      <cstring>PTTedarikciAdresi</cstring>
+     <property name="elideMode">
+      <enum>Qt::ElideLeft</enum>
      </property>
-    </widget>
-   </item>
-   <item row="1" column="1" colspan="2">
-    <widget class="QPlainTextEdit" name="PTTedarikciAdresi"/>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="TedarikciTelefonu">
-     <property name="text">
-      <string>Tedarikçi Telefonu:</string>
+     <property name="documentMode">
+      <bool>true</bool>
      </property>
-     <property name="buddy">
-      <cstring>LETedarikciTelefonu</cstring>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
      </property>
     </widget>
    </item>
-   <item row="2" column="1" colspan="2">
-    <widget class="QLineEdit" name="LETedarikciTelefonu"/>
-   </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="TedarikciYetkiliKisi">
+   <item row="0" column="1">
+    <widget class="QPushButton" name="btnKapat">
      <property name="text">
-      <string>Tedarikçi Yetkili Kişi:</string>
-     </property>
-     <property name="buddy">
-      <cstring>LETedarikciYetkiliKisi</cstring>
+      <string>Kapat</string>
      </property>
     </widget>
    </item>
-   <item row="4" column="1" colspan="2">
-    <widget class="QLineEdit" name="LETedarikciYetkiliKisi"/>
-   </item>
-   <item row="5" column="0" colspan="2">
-    <widget class="QPushButton" name="PBKaydet">
+   <item row="1" column="1">
+    <widget class="QPushButton" name="btnYeniTedarikci">
      <property name="text">
-      <string>KAYDET</string>
+      <string>Yeni Tedarikçi</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="2">
-    <widget class="QPushButton" name="PBIptal">
-     <property name="text">
-      <string>IPTAL</string>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
      </property>
-    </widget>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>564</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>PBKaydet</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOTedarikciFormu</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>120</x>
-     <y>393</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>95</x>
-     <y>429</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>PBIptal</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOTedarikciFormu</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>539</x>
-     <y>396</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>643</x>
-     <y>438</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

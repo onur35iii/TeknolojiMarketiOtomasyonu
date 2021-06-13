@@ -1,8 +1,8 @@
 #ifndef TMOTEDARIKCILISTEWIDGET_H
 #define TMOTEDARIKCILISTEWIDGET_H
-#include <veriler/veri_yoneticileri/tmotedarikcibilgileriyoneticisi.h>
-
+#include<veriler/veri_yoneticileri/tmotedarikcibilgileriyoneticisi.h>
 #include <QWidget>
+
 namespace Ui {
 class TMOTedarikciListeWidget;
 }
@@ -14,13 +14,13 @@ class TMOTedarikciListeWidget : public QWidget
 public:
     explicit TMOTedarikciListeWidget(QWidget *parent = nullptr);
     ~TMOTedarikciListeWidget();
-
     void arama_yap();
+
 signals:
     void duzeltmeTalepEdildi(TMOTedarikciBilgileriYoneticisi::Ptr tedarikci);
-
 private slots:
     void ara();
+
 private:
     void listeGuncelle();
     Ui::TMOTedarikciListeWidget *ui;

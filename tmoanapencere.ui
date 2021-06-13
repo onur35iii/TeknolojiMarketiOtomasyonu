@@ -14,6 +14,7 @@
    <string>TMOAnaPencere</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -69,23 +70,26 @@
     <addaction name="separator"/>
     <addaction name="menuToplama_Bilgisayar_Faturas_2"/>
    </widget>
-   <widget class="QMenu" name="menuPar_a_Uyum_Bilgileri">
+   <widget class="QMenu" name="menuPar_a_Listeleme_B_l_m">
     <property name="title">
-     <string>Parça Uyum Bilgileri</string>
+     <string>Parça Listeleme Bölümü</string>
     </property>
-   </widget>
-   <widget class="QMenu" name="menuMa_aza_Bilgileri">
-    <property name="title">
-     <string>Mağaza</string>
-    </property>
+    <addaction name="actionAnakart_Listele"/>
+    <addaction name="actionGPU_Listele"/>
+    <addaction name="actionG_Kayna_Listele"/>
+    <addaction name="actionHDD_Listele"/>
+    <addaction name="actionRAM_Listele"/>
+    <addaction name="action_lemci_Listele"/>
+    <addaction name="actionFare_Listele"/>
+    <addaction name="actionKlavye_Listele"/>
+    <addaction name="actionMonit_r_Listele"/>
+    <addaction name="actionKasa_Listele"/>
    </widget>
    <addaction name="menuKasa"/>
+   <addaction name="menuPar_a_Listeleme_B_l_m"/>
    <addaction name="menuTedarik_i"/>
-   <addaction name="menuMa_aza_Bilgileri"/>
    <addaction name="menuPar_a_Fatura"/>
-   <addaction name="menuPar_a_Uyum_Bilgileri"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAnakart_Ekle">
    <property name="text">
     <string>Anakart Ekle </string>
@@ -144,6 +148,56 @@
   <action name="actionTedarik_iler">
    <property name="text">
     <string>Tedarikçiler</string>
+   </property>
+  </action>
+  <action name="actionAnakart_Listele">
+   <property name="text">
+    <string>Anakart Listele</string>
+   </property>
+  </action>
+  <action name="actionGPU_Listele">
+   <property name="text">
+    <string>GPU Listele</string>
+   </property>
+  </action>
+  <action name="actionG_Kayna_Listele">
+   <property name="text">
+    <string>Güç Kaynağı Listele</string>
+   </property>
+  </action>
+  <action name="actionHDD_Listele">
+   <property name="text">
+    <string>HDD Listele</string>
+   </property>
+  </action>
+  <action name="actionRAM_Listele">
+   <property name="text">
+    <string>RAM Listele</string>
+   </property>
+  </action>
+  <action name="action_lemci_Listele">
+   <property name="text">
+    <string>İşlemci Listele</string>
+   </property>
+  </action>
+  <action name="actionFare_Listele">
+   <property name="text">
+    <string>Fare Listele</string>
+   </property>
+  </action>
+  <action name="actionKlavye_Listele">
+   <property name="text">
+    <string>Klavye Listele</string>
+   </property>
+  </action>
+  <action name="actionMonit_r_Listele">
+   <property name="text">
+    <string>Monitör Listele</string>
+   </property>
+  </action>
+  <action name="actionKasa_Listele">
+   <property name="text">
+    <string>Kasa Listele</string>
    </property>
   </action>
  </widget>

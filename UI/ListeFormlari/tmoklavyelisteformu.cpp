@@ -4,7 +4,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmoklavye.h>
 #include<UI/ListeFormlari/tmoklavyelisteformu.h>
-#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
+#include<UI/VeriFormlari/tmoklavyetanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -100,11 +100,11 @@ void TMOKlavyeListeFormu::ListeGuncelle()
         ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOKlavyeListeFormu form;
+                TMOKlavyeTanimlamaFormu form;
                 form.setWindowTitle(tr("%1 Klavye Bilgilerini Düzenle").arg(veri_i->getKlavyeAdi()));
-               // form.setListe(veri_i);
+               form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 

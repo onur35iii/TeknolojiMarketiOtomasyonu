@@ -4,7 +4,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmomonitor.h>
 #include<UI/ListeFormlari/tmomonitorlisteformu.h>
-#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
+#include<UI/VeriFormlari/tmomonitortanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -95,7 +95,7 @@ void TMOMonitorListeFormu::ListeGuncelle()
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 7, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 11, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -114,14 +114,14 @@ void TMOMonitorListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 12, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOMonitorListeFormu form;
+                TMOMonitorTanimlamaFormu form;
                 form.setWindowTitle(tr("%1 Monitör Bilgilerini Düzenle").arg(veri_i->getMonitorAdi()));
-              //  form.setListe(veri_i);
+                form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 

@@ -34,6 +34,7 @@
 #include<UI/ListeFormlari/tmomonitorlisteformu.h>
 #include<UI/ListeFormlari/tmoramlisteformu.h>
 #include<UI/ListeFormlari/tmoparcalisteformu.h>
+#include<UI/ListeFormlari/tmotedarikcilistewidget.h>
 
 #include <veriler/veri_siniflari/tmoanakart.h>
 #include <veriler/veri_siniflari/tmofare.h>
@@ -84,7 +85,7 @@ TMOAnaPencere::~TMOAnaPencere()
 
 
 void TMOAnaPencere::on_actionAnakart_triggered()
-{
+{/*
 
     TMOYeniAnakartTanimlamaFormu form;
     auto veri = TMOGenelVeriYoneticisi::sec().getAnakart().yeni();
@@ -94,7 +95,8 @@ void TMOAnaPencere::on_actionAnakart_triggered()
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
-        TMOGenelVeriYoneticisi::sec().getAnakart().ekle(veri);}
+        TMOGenelVeriYoneticisi::sec().getAnakart().ekle(veri);}*/
+
 }
 
 
@@ -130,7 +132,7 @@ void TMOAnaPencere::on_actionG_Kayna_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getGucKaynagi().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni Güç Kaynağı Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -143,7 +145,7 @@ void TMOAnaPencere::on_actionHDD_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getHDD().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni HDD Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -156,7 +158,7 @@ void TMOAnaPencere::on_actionRAM_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getRAM().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni RAM Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -169,7 +171,7 @@ void TMOAnaPencere::on_action_lemci_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getIslemci().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni İşlemci Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -182,7 +184,7 @@ void TMOAnaPencere::on_actionFare_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getFare().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni Fare Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -195,7 +197,7 @@ void TMOAnaPencere::on_actionKlavye_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getKlavye().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni Klavye Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -208,7 +210,7 @@ void TMOAnaPencere::on_actionMonit_r_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getMonitor().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni Monitör Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -221,7 +223,7 @@ void TMOAnaPencere::on_actionKasa_Ekle_triggered()
     auto veri = TMOGenelVeriYoneticisi::sec().getKasa().yeni();
 
     form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
+    form.setWindowTitle(tr("Yeni Kasa Ekleme"));
 
     if (form.exec() == QDialog::Accepted) {
         form.getVeri();
@@ -230,5 +232,76 @@ void TMOAnaPencere::on_actionKasa_Ekle_triggered()
 
 void TMOAnaPencere::on_actionTedarik_i_Ekle_triggered()
 {
+    TMOTedarikciFormu form;
 
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionTedarik_iler_triggered()
+{
+
+    TMOTedarikciFormu form;
+
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionAnakart_Listele_triggered()
+{
+    TMOAnakartListeFormu form;
+    form.exec();
+
+}
+
+void TMOAnaPencere::on_actionGPU_Listele_triggered()
+{
+    TMOGPUListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionG_Kayna_Listele_triggered()
+{
+    TMOGucKaynagiListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionHDD_Listele_triggered()
+{
+    TMOHDDListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionRAM_Listele_triggered()
+{
+    TMORAMListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_action_lemci_Listele_triggered()
+{
+    TMOIslemciListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionFare_Listele_triggered()
+{
+    TMOFareListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionKlavye_Listele_triggered()
+{
+    TMOKlavyeListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionMonit_r_Listele_triggered()
+{
+    TMOMonitorListeFormu form;
+    form.exec();
+}
+
+void TMOAnaPencere::on_actionKasa_Listele_triggered()
+{
+    TMOKasaListeFormu form;
+    form.exec();
 }

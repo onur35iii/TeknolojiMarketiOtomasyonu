@@ -42,6 +42,28 @@ private slots:
 
     void on_actionTedarik_i_Ekle_triggered();
 
+    void on_actionTedarik_iler_triggered();
+
+    void on_actionAnakart_Listele_triggered();
+
+    void on_actionGPU_Listele_triggered();
+
+    void on_actionG_Kayna_Listele_triggered();
+
+    void on_actionHDD_Listele_triggered();
+
+    void on_actionRAM_Listele_triggered();
+
+    void on_action_lemci_Listele_triggered();
+
+    void on_actionFare_Listele_triggered();
+
+    void on_actionKlavye_Listele_triggered();
+
+    void on_actionMonit_r_Listele_triggered();
+
+    void on_actionKasa_Listele_triggered();
+
 private:
     Ui::TMOAnaPencere *ui;
 };

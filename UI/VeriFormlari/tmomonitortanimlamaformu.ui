@@ -57,52 +57,28 @@
       <property name="text">
        <string>HDMI SAYISI:</string>
       </property>
-      <property name="buddy">
-       <cstring>LEHDMISayisi</cstring>
-      </property>
      </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="LEHDMISayisi"/>
     </item>
     <item row="3" column="0">
      <widget class="QLabel" name="LYenilemeHizi">
       <property name="text">
        <string>YENİLEME HIZI:</string>
       </property>
-      <property name="buddy">
-       <cstring>LEYenilemeHizi</cstring>
-      </property>
      </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="LEYenilemeHizi"/>
     </item>
     <item row="4" column="0">
      <widget class="QLabel" name="LBoyut">
       <property name="text">
        <string>BOYUT:</string>
       </property>
-      <property name="buddy">
-       <cstring>LEBoyut</cstring>
-      </property>
      </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="LEBoyut"/>
     </item>
     <item row="5" column="0">
      <widget class="QLabel" name="LCozunurluk">
       <property name="text">
        <string>ÇÖZÜNÜRLÜK:</string>
       </property>
-      <property name="buddy">
-       <cstring>LECozunurluk</cstring>
-      </property>
      </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLineEdit" name="LECozunurluk"/>
     </item>
     <item row="6" column="0">
      <widget class="QLabel" name="LRenk">
@@ -131,16 +107,24 @@
       </property>
      </widget>
     </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="SBHDMISayisi"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="SBYenilemeHizi"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="SBBoyut"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QSpinBox" name="SBCozunurluk"/>
+    </item>
    </layout>
   </widget>
  </widget>
  <tabstops>
   <tabstop>LEMarka</tabstop>
   <tabstop>LEModelNo</tabstop>
-  <tabstop>LEHDMISayisi</tabstop>
-  <tabstop>LEYenilemeHizi</tabstop>
-  <tabstop>LEBoyut</tabstop>
-  <tabstop>LECozunurluk</tabstop>
   <tabstop>LERenk</tabstop>
   <tabstop>PBKaydet</tabstop>
   <tabstop>PBIptal</tabstop>

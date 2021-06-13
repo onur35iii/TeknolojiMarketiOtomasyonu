@@ -29,9 +29,6 @@
     <item row="2" column="1">
      <widget class="QLineEdit" name="LEFanSayisi"/>
     </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="LEKasaBoyutu"/>
-    </item>
     <item row="5" column="1">
      <widget class="QLineEdit" name="LEKasaAnakartYapisi"/>
     </item>
@@ -103,9 +100,6 @@
       <property name="text">
        <string>KASA BOYUTU:</string>
       </property>
-      <property name="buddy">
-       <cstring>LEKasaBoyutu</cstring>
-      </property>
      </widget>
     </item>
     <item row="6" column="1">
@@ -131,6 +125,9 @@
     <item row="3" column="1">
      <widget class="QLineEdit" name="LEGucKaynagi"/>
     </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="SBKasaBoyutu"/>
+    </item>
    </layout>
   </widget>
  </widget>
@@ -139,7 +136,6 @@
   <tabstop>LEModelNo</tabstop>
   <tabstop>LEFanSayisi</tabstop>
   <tabstop>LEGucKaynagi</tabstop>
-  <tabstop>LEKasaBoyutu</tabstop>
   <tabstop>LEKasaAnakartYapisi</tabstop>
   <tabstop>LEKasaRenk</tabstop>
   <tabstop>PBKaydet</tabstop>

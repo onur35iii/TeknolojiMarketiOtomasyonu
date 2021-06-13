@@ -14,16 +14,14 @@ class TMOTedarikciFormu : public QDialog
 public:
     explicit TMOTedarikciFormu(QWidget *parent = nullptr);
     ~TMOTedarikciFormu();
-
 private slots:
-    void on_tabTedarikciIslemleri_tabCloseRequested(int index);
+    void on_tabTedarikciIslemleri_tabCloseRequested(int index) ;
 
     void on_btnYeniTedarikci_clicked();
 
     void tedarikciDuzelt(TMOTedarikciBilgileriPtr tedarikci);
 private:
     Ui::TMOTedarikciFormu *ui;
-
 };
 
 #endif // TMOTEDARIKCIFORMU_H

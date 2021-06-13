@@ -5,7 +5,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmoram.h>
 #include<UI/ListeFormlari/tmoramlisteformu.h>
-#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
+#include<UI/VeriFormlari/tmoramtanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -45,40 +45,32 @@ void TMORAMListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 0, hucre);
 
         hucre = new QTableWidgetItem();
-
+        hucre->setText(liste[i]->getRamAdi());
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-     //   hucre->setText(liste[i]->getId());
+        hucre->setText(liste[i]->getRamModelNo());
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getRamAdi());
+        hucre->setText(liste[i]->getRamtipi());
         ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getRamModelNo());
+        hucre->setText(liste[i]->getRamBushizi());
         ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getRamtipi());
+        hucre->setText(liste[i]->getRamKapasitesi());
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getRamBushizi());
-        ui->TWTablo->setItem(i, 6, hucre);
-
-        hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getRamKapasitesi());
-        ui->TWTablo->setItem(i, 7, hucre);
-
-        hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getRamGecikmeSuresi());
-        ui->TWTablo->setItem(i, 8, hucre);
+        ui->TWTablo->setItem(i, 6, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 9, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 7, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -97,14 +89,14 @@ void TMORAMListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 9, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMORAMListeFormu form;
+           TMORAMTanimlamaFormu  form;
                 form.setWindowTitle(tr("%1 Monitör Bilgilerini Düzenle").arg(veri_i->getRamAdi()));
-              //  form.setListe(veri_i);
+               form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                   // form.getliste();
+                   form.getVeri();
                     this->ListeGuncelle(); }
 
     });

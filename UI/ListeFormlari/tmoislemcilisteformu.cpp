@@ -4,7 +4,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmoislemci.h>
 #include<UI/ListeFormlari/tmoislemcilisteformu.h>
-#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
+#include<UI/VeriFormlari/tmoislemcitanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -56,44 +56,39 @@ void TMOIslemciListeFormu::ListeGuncelle()
 
         hucre = new QTableWidgetItem();
 
-
         ui->TWTablo->setItem(i, 1, hucre);
-
-        hucre  = new QTableWidgetItem();
-     //   hucre->setText(liste[i]->getId());
-        ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciAdi());
-        ui->TWTablo->setItem(i, 3, hucre);
+        ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciModelNo());
-        ui->TWTablo->setItem(i, 4, hucre);
+        ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciSoketTipi());
-        ui->TWTablo->setItem(i, 5, hucre);
+        ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciHizi());
-        ui->TWTablo->setItem(i, 6, hucre);
+        ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciCekirdekSayisi());
-        ui->TWTablo->setItem(i, 7, hucre);
+        ui->TWTablo->setItem(i, 6, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciOnBellek());
-        ui->TWTablo->setItem(i, 8, hucre);
+        ui->TWTablo->setItem(i, 7, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciBellekTuru());
-        ui->TWTablo->setItem(i, 9, hucre);
+        ui->TWTablo->setItem(i, 8, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciGucTuketimi());
-        ui->TWTablo->setItem(i, 10, hucre);
+        ui->TWTablo->setItem(i, 9, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getIslemciEntegreGPUvarmi());
@@ -104,7 +99,7 @@ void TMOIslemciListeFormu::ListeGuncelle()
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 13, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 11, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -123,14 +118,14 @@ void TMOIslemciListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 14, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 12, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOIslemciListeFormu form;
+                TMOIslemciTanimlamaFormu form;
                 form.setWindowTitle(tr("%1 İşlemci Bilgilerini Düzenle").arg(veri_i->getIslemciAdi()));
-               // form.setListe(veri_i);
+                form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 

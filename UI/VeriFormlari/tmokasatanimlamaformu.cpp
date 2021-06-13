@@ -19,7 +19,7 @@ TMOKasaPtr TMOKasaTanimlamaFormu::getVeri() const
     veri->setKasaModelNo(ui->LEModelNo->text());
     veri->setKasaFanSayisi(ui->LEFanSayisi->text());
     veri->setKasaGucKaynagivarmi(ui->LEKasaAnakartYapisi->text());
-    veri->setKasaBoyutu(ui->LEKasaBoyutu->text().toInt());
+    veri->setKasaBoyutu(ui->SBKasaBoyutu->value());
     veri->setKasaAnakartYapisi(ui->LEKasaAnakartYapisi->text());
     veri->setKasaRenk(ui->LEKasaRenk->text());
     return veri;
@@ -32,7 +32,7 @@ void TMOKasaTanimlamaFormu::setVeri(const TMOKasaPtr &value)
      ui->LEModelNo->setText(veri->getKasaModelNo());
      ui->LEFanSayisi->setText(veri->getKasaFanSayisi());
      ui->LEGucKaynagi->setText(veri->getKasaGucKaynagivarmi());
-     //ui->LEKasaBoyutu->setText()veri->getKasaBoyutu());
+     ui->SBKasaBoyutu->setValue(veri->getKasaBoyutu());
      ui->LEKasaAnakartYapisi->setText(veri->getKasaAnakartYapisi());
      ui->LEKasaRenk->setText(veri->getKasaRenk());
 }

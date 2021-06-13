@@ -55,32 +55,29 @@ void TMOFareListeFormu::ListeGuncelle()
         hucre->setText(tr("%1").arg(liste[i]->getId()));
         ui->TWTablo->setItem(i, 0, hucre);
 
-        ui->TWTablo->setItem(i, 1, hucre);
-
-
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareAdi());
-        ui->TWTablo->setItem(i, 2, hucre);
+        ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareModeli());
-        ui->TWTablo->setItem(i, 3, hucre);
+        ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareRenk());
-        ui->TWTablo->setItem(i, 4, hucre);
+        ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(tr("%1").arg(liste[i]->getFareDPI()));
-        ui->TWTablo->setItem(i, 5, hucre);
+        ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getFareBaglantiTuru());
-        ui->TWTablo->setItem(i, 6, hucre);
+        ui->TWTablo->setItem(i, 5, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 7, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 6, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -99,7 +96,7 @@ void TMOFareListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 7, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                  TMOYeniFareTanimlamaFormu form;

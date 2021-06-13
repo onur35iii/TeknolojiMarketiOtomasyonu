@@ -48,16 +48,7 @@
       <property name="text">
        <string>FAN BOYUTU:</string>
       </property>
-      <property name="buddy">
-       <cstring>LEFanBoyutu</cstring>
-      </property>
      </widget>
-    </item>
-    <item row="2" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEFanBoyutu"/>
-    </item>
-    <item row="3" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEDegeri"/>
     </item>
     <item row="4" column="2">
      <widget class="QPushButton" name="PBIptal">
@@ -74,9 +65,6 @@
       <property name="text">
        <string>DEGERİ:</string>
       </property>
-      <property name="buddy">
-       <cstring>LEDegeri</cstring>
-      </property>
      </widget>
     </item>
     <item row="0" column="0">
@@ -92,14 +80,18 @@
     <item row="0" column="1" colspan="2">
      <widget class="QLineEdit" name="LEMarka"/>
     </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="SBFanBoyutu"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="SBDegeri"/>
+    </item>
    </layout>
   </widget>
  </widget>
  <tabstops>
   <tabstop>LEMarka</tabstop>
   <tabstop>LEModel</tabstop>
-  <tabstop>LEFanBoyutu</tabstop>
-  <tabstop>LEDegeri</tabstop>
   <tabstop>PBKaydet</tabstop>
   <tabstop>PBIptal</tabstop>
  </tabstops>

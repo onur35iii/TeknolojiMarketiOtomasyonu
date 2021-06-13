@@ -17,10 +17,10 @@ TMOMonitorPtr TMOMonitorTanimlamaFormu::getVeri() const
 {
     veri->setMonitorAdi(ui->LEMarka->text());
     veri->setMonitorModelNo(ui->LEModelNo->text());
-    veri->setMonitorHDMIBaglantiSayisi(ui->LEHDMISayisi->text().toInt());
-    veri->setMonitorYenilemeHizi(ui->LEYenilemeHizi->text().toInt());
-    veri->setMonitorBoyutu(ui->LEBoyut->text().toInt());
-    veri->setMonitorCozunurluk(ui->LECozunurluk->text().toInt());
+    veri->setMonitorHDMIBaglantiSayisi(ui->SBHDMISayisi->value());
+    veri->setMonitorYenilemeHizi(ui->SBYenilemeHizi->value());
+    veri->setMonitorBoyutu(ui->SBBoyut->value());
+    veri->setMonitorCozunurluk(ui->SBCozunurluk->value());
     veri->setMonitorRenk(ui->LERenk->text());
     return veri;
 }
@@ -30,9 +30,9 @@ void TMOMonitorTanimlamaFormu::setVeri(const TMOMonitorPtr &value)
     veri = value;
      ui->LEMarka->setText(veri->getMonitorAdi());
      ui->LEModelNo->setText(veri->getMonitorModelNo());
-     //ui->LEHDMISayisi->setText(veri->getMonitorHDMIBaglantiSayisi());
-    // ui->LEYenilemeHizi->setText(veri->getMonitorYenilemeHizi());
-    // ui->LEBoyut->setText()veri->getMonitorBoyutu());
-   //  ui->LECozunurluk->setText(veri->getMonitorCozunurluk());
+     ui->SBHDMISayisi->setValue(veri->getMonitorHDMIBaglantiSayisi());
+     ui->SBYenilemeHizi->setValue(veri->getMonitorYenilemeHizi());
+     ui->SBBoyut->setValue(veri->getMonitorBoyutu());
+    ui->SBCozunurluk->setValue(veri->getMonitorCozunurluk());
      ui->LERenk->setText(veri->getMonitorRenk());
 }

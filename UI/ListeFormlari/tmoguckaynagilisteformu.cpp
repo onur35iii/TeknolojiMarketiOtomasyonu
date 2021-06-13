@@ -4,7 +4,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmoguckaynagi.h>
 #include<UI/ListeFormlari/tmoguckaynagilisteformu.h>
-#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
+#include<UI/VeriFormlari/tmoguckaynagitanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -56,32 +56,24 @@ void TMOGucKaynagiListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 0, hucre);
 
         hucre = new QTableWidgetItem();
-
+        hucre->setText(liste[i]->getGucKaynagiAdi());
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-     //*   hucre->setText(liste[i]->getId());
+        hucre->setText(liste[i]->getGucKaynagiModelNo());
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getGucKaynagiAdi());
+        hucre->setText(tr("%1").arg(liste[i]->getGucKaynagiFanBoyutu()));
         ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getGucKaynagiModelNo());
+        hucre->setText(tr("%1").arg(liste[i]->getGucKaynagiDegeri()));
         ui->TWTablo->setItem(i, 4, hucre);
-
-        hucre = new QTableWidgetItem();
-    //*    hucre->setText(liste[i]->getGucKaynagiFanBoyutu());
-        ui->TWTablo->setItem(i, 5, hucre);
-
-        hucre = new QTableWidgetItem();
-     //*   hucre->setText(liste[i]->getGucKaynagiDegeri());
-        ui->TWTablo->setItem(i, 6, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 7, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 5, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -100,14 +92,14 @@ void TMOGucKaynagiListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 7, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 6, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOGucKaynagiListeFormu form;
+                TMOGucKaynagiTanimlamaFormu form;
                 form.setWindowTitle(tr("%1 Güç Kaynak Bilgilerini Düzenle").arg(veri_i->getGucKaynagiAdi()));
-         //*       form.setListe(veri_i);
+               form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 

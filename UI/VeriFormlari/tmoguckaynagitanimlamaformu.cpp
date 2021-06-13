@@ -17,8 +17,8 @@ TMOGucKaynagiPtr TMOGucKaynagiTanimlamaFormu::getVeri() const
 {
         veri->setGucKaynagiAdi(ui->LEMarka->text());
         veri->setGucKaynagiModelNo(ui->LEModel->text());
-        veri->setGucKaynagiFanBoyutu(ui->LEFanBoyutu->text().toInt());
-        veri->setGucKaynagiDegeri(ui->LEDegeri->text().toInt());
+       veri->setGucKaynagiFanBoyutu(ui->SBFanBoyutu->value());
+        veri->setGucKaynagiDegeri(ui->SBDegeri->value());
 
         return veri;
 }
@@ -28,6 +28,6 @@ void TMOGucKaynagiTanimlamaFormu::setVeri(const TMOGucKaynagiPtr &value)
         veri = value;
         ui->LEMarka->setText(veri->getGucKaynagiAdi());
         ui->LEModel->setText(veri->getGucKaynagiModelNo());
-       // ui->LEFanBoyutu->setText(veri->getGucKaynagiFanBoyutu());
-      //  ui->LEDegeri->setText(veri->getGucKaynagiDegeri());
+        ui->SBFanBoyutu->setValue(veri->getGucKaynagiFanBoyutu());
+        ui->SBDegeri->setValue(veri->getGucKaynagiDegeri());
 }

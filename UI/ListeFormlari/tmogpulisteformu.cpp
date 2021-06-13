@@ -5,7 +5,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmogpu.h>
 #include<UI/ListeFormlari/tmogpulisteformu.h>
-#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
+#include<UI/VeriFormlari/tmogputanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -56,39 +56,33 @@ void TMOGPUListeFormu::ListeGuncelle()
         hucre->setText(tr("%1").arg(liste[i]->getId()));
         ui->TWTablo->setItem(i, 0, hucre);
 
+        hucre = new QTableWidgetItem();
+        hucre->setText(liste[i]->getGPUAdi());
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(tr("%1").arg(liste[i]->getId()));
+        hucre->setText(liste[i]->getGPUModelNo());
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getGPUAdi());
+        hucre->setText(liste[i]->getGPUBellekHizi());
         ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getGPUModelNo());
+        hucre->setText(tr("%1").arg(liste[i]->getGPUSlotSayisi()));
         ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getGPUBellekHizi());
+        hucre->setText(liste[i]->getGucTuketimi());
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(tr("%1").arg(liste[i]->getGPUSlotSayisi()));
-        ui->TWTablo->setItem(i, 6, hucre);
-
-        hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getGucTuketimi());
-        ui->TWTablo->setItem(i, 7, hucre);
-
-        hucre = new QTableWidgetItem();
         hucre->setText(tr("%1").arg(liste[i]->getGPUBoyutu()));
-        ui->TWTablo->setItem(i, 7, hucre);
+        ui->TWTablo->setItem(i,6, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 8, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 7, silmeButonu);
         auto veri_i = liste[i];
 
         connect(silmeButonu, &QPushButton::clicked, [veri_i, this]() {
@@ -106,14 +100,14 @@ void TMOGPUListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 12, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOGPUListeFormu form;
+                TMOGPUTanimlamaFormu form;
                 form.setWindowTitle(tr("%1 Ekran Kartı Bilgilerini Düzenle").arg(veri_i->getGPUAdi()));
-  //*              form.setListe(veri_i);
+              form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 
@@ -145,15 +139,15 @@ void TMOGPUListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getGPUAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getGPUModelNo().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getGPUAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getGPUModelNo().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getGPUAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getGPUModelNo().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

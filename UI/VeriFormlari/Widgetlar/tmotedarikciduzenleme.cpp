@@ -1,10 +1,8 @@
 #include "tmotedarikciduzenleme.h"
 #include "ui_tmotedarikciduzenleme.h"
 #include<veriler/veri_siniflari/tmotedarikcibilgileri.h>
-
-
 TMOTedarikciDuzenleme::TMOTedarikciDuzenleme(QWidget *parent) :
-    QDialog(parent),
+    QWidget(parent),
     ui(new Ui::TMOTedarikciDuzenleme)
 {
     ui->setupUi(this);
@@ -17,25 +15,25 @@ TMOTedarikciDuzenleme::~TMOTedarikciDuzenleme()
 
 TMOTedarikciBilgileriPtr TMOTedarikciDuzenleme::getVeri() const
 {
-    veri->setTedarikciAdresi(ui->PTTedarikciAdresi->toPlainText());
-    veri->setTedarikciAdi(ui->LETedarikciAdi->text());
-    veri->setTedarikciTelefonNo(ui->LETedarikciTelefon->text());
-    veri->setTedarikciYetkiliKisi(ui->LETedarikciYetkiliKisi->text());
+    veri->setTedarikciAdresi(ui->pteTedarikciAdresi->toPlainText());
+    veri->setTedarikciAdi(ui->leTedarikciAdi->text());
+    veri->setTedarikciTelefonNo(ui->leTedarikciTelefon->text());
+    veri->setTedarikciYetkiliKisi(ui->leTedarikciYetkiliKisi->text());
     return veri;
 }
 
 void TMOTedarikciDuzenleme::setVeri(const TMOTedarikciBilgileriPtr &value)
 {
-    ui->LETedarikciAdi->setText(veri->getTedarikciAdi());
-    ui->LETedarikciTelefon->setText(veri->getTedarikciTelefonNo());
-    ui->LETedarikciYetkiliKisi->setText(veri->getTedarikciYetkiliKisi());
-    ui->PTTedarikciAdresi->setPlainText(veri->getTedarikciAdresi());
+    ui->leTedarikciAdi->setText(veri->getTedarikciAdi());
+    ui->leTedarikciTelefon->setText(veri->getTedarikciTelefonNo());
+    ui->leTedarikciYetkiliKisi->setText(veri->getTedarikciYetkiliKisi());
+    ui->pteTedarikciAdresi->setPlainText(veri->getTedarikciAdresi());
     veri = value;
 }
 
 void TMOTedarikciDuzenleme::on_btnKaydet_clicked()
 {
-     emit kaydetKapat();
+      emit kaydetKapat();
 }
 
 void TMOTedarikciDuzenleme::on_btnIptal_clicked()

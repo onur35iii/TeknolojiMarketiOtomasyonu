@@ -4,7 +4,7 @@
 #include<veriler/tmogenelveriyoneticisi.h>
 #include<veriler/veri_siniflari/tmokasa.h>
 #include<UI/ListeFormlari/tmokasalisteformu.h>
-#include<UI/VeriFormlari/tmoyenifaretanimlamaformu.h>
+#include<UI/VeriFormlari/tmokasatanimlamaformu.h>
 #include <QStringList>
 #include <QTableWidgetItem>
 #include <QPushButton>
@@ -110,14 +110,14 @@ void TMOKasaListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 17, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 11, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
-                TMOKasaListeFormu form;
+                TMOKasaTanimlamaFormu form;
                 form.setWindowTitle(tr("%1 Kasa Bilgilerini Düzenle").arg(veri_i->getKasaAdi()));
-                //form.setListe(veri_i);
+                form.setVeri(veri_i);
                 if(form.exec()==QDialog::Accepted){
-                    form.getListe();
+                    form.getVeri();
                     this->ListeGuncelle();
                 }
 

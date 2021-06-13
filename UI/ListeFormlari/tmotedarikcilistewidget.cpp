@@ -1,14 +1,15 @@
 #include "tmotedarikcilistewidget.h"
 #include "ui_tmotedarikcilistewidget.h"
-#include<veriler/veri_siniflari/tmotedarikcibilgileri.h>
-#include<veriler/tmogenelveriyoneticisi.h>
+#include <veriler/veri_siniflari/tmotedarikcibilgileri.h>
+#include <UI/VeriFormlari/tmotedarikciformu.h>
+#include <veriler/tmogenelveriyoneticisi.h>
 #include <QMessageBox>
 TMOTedarikciListeWidget::TMOTedarikciListeWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TMOTedarikciListeWidget)
 {
     ui->setupUi(this);
-     arama_yap();
+    arama_yap();
 }
 
 TMOTedarikciListeWidget::~TMOTedarikciListeWidget()
@@ -80,23 +81,16 @@ void TMOTedarikciListeWidget::ara()
 
 void TMOTedarikciListeWidget::listeGuncelle()
 {
-    // Listedeki bilgileri ekrana aktaran fonksiyon
-
-    // tabloyu sıfırlanır...
     ui->tblVeriler->clear();
-
-    // Satır ve sütun sayısını ayarlayalım...
     ui->tblVeriler->setRowCount(liste.length());
     ui->tblVeriler->setColumnCount(7);
 
-    // Döngü ile listeyi ekrana aktaralım...
-    //Başlıklar..
     QStringList basliklar;
     basliklar << tr("Tedarikçi ID") << tr("Tedarikçi Adı") << tr("Adresi") << tr("Telefon")
               << tr("Yetkili Kişi") << tr("Tedarikçi Sil") << tr("Tedarikçi Düzelt");
     ui->tblVeriler->setHorizontalHeaderLabels(basliklar);
 
-
+    // Veri
     for (int i = 0; i < liste.length(); i++) {
         QTableWidgetItem *hucre = new QTableWidgetItem();
         hucre->setText(tr("%1").arg(liste[i]->getId()));
