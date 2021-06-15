@@ -10,9 +10,9 @@ class TMOAlisFaturasi : public QObject
 public:
     explicit TMOAlisFaturasi(QObject *parent = nullptr);
     Q_PROPERTY(Idturu  ParcaAlisFaturaId READ getId WRITE setId NOTIFY IdDegisti)
-    Q_PROPERTY(QDate ParcaAlisTarihi READ getParcaAlisTarihi WRITE setParcaAlisFaturaNo NOTIFY
-                   ParcaAlisFaturaNoDegisti)
-    Q_PROPERTY(Tamsayi ParcaAlisFaturaNo READ getParcaAlisFaturaNo WRITE setParcaAlisTarihi NOTIFY ParcaAlisTarihiDegisti)
+    Q_PROPERTY(QDate ParcaAlisTarihi READ getParcaAlisTarihi WRITE  setParcaAlisTarihi NOTIFY
+                   ParcaAlisTarihiDegisti)
+    Q_PROPERTY(Tamsayi ParcaAlisFaturaNo READ getParcaAlisFaturaNo WRITE setParcaAlisFaturaNo NOTIFY ParcaAlisFaturaNoDegisti)
 
     Idturu getId() const;
     QDate getParcaAlisTarihi() const;

@@ -27,6 +27,7 @@ TMOAnakartPtr TMOYeniAnakartTanimlamaFormu::getVeri() const
 
 void TMOYeniAnakartTanimlamaFormu::setVeri(const TMOAnakartPtr & value)
 {
+    veri=value;
     ui->LEMarka->setText(veri->getAnakartAdi());
     ui->LEModelNo->setText(veri->getAnakartModelNo());
     ui->LESoketTipi->setText(veri->getAnakartSoketTipi());

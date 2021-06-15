@@ -24,6 +24,7 @@ TMOTedarikciBilgileriPtr TMOTedarikciDuzenleme::getVeri() const
 
 void TMOTedarikciDuzenleme::setVeri(const TMOTedarikciBilgileriPtr &value)
 {
+    veri=value;
     ui->leTedarikciAdi->setText(veri->getTedarikciAdi());
     ui->leTedarikciTelefon->setText(veri->getTedarikciTelefonNo());
     ui->leTedarikciYetkiliKisi->setText(veri->getTedarikciYetkiliKisi());
