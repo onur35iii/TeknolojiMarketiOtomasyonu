@@ -139,15 +139,15 @@ void TMOFareListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getFareAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getFareModeli().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getFareAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getFareModeli().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getFareAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getFareModeli().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

@@ -170,12 +170,12 @@ color: #ffffff;
    <slot>aramaYap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>812</x>
-     <y>84</y>
+     <x>814</x>
+     <y>86</y>
     </hint>
     <hint type="destinationlabel">
      <x>942</x>
-     <y>146</y>
+     <y>163</y>
     </hint>
    </hints>
   </connection>
@@ -186,124 +186,12 @@ color: #ffffff;
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>890</x>
-     <y>87</y>
+     <x>903</x>
+     <y>84</y>
     </hint>
     <hint type="destinationlabel">
-     <x>941</x>
-     <y>194</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPModeliFTIleBaslayan</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOGPUListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>451</x>
-     <y>115</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>942</x>
-     <y>76</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPModeliIFTIleBiten</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOGPUListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>565</x>
-     <y>116</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>943</x>
-     <y>54</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPModeliFTIceren</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOGPUListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>662</x>
-     <y>111</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>943</x>
-     <y>103</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>LEPModeliDeger</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>TMOGPUListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>445</x>
-     <y>64</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>943</x>
-     <y>17</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPMarkasiFTIceren</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOGPUListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>300</x>
-     <y>108</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>2</x>
-     <y>145</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPMarkasiFTIleBiten</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOGPUListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>189</x>
-     <y>110</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>2</x>
-     <y>128</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPMarkasiFTIleBaslayan</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOGPUListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>68</x>
-     <y>108</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>2</x>
-     <y>106</y>
+     <x>944</x>
+     <y>233</y>
     </hint>
    </hints>
   </connection>
@@ -314,28 +202,124 @@ color: #ffffff;
    <slot>aramaYap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>83</x>
-     <y>60</y>
+     <x>117</x>
+     <y>69</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1</x>
-     <y>52</y>
+     <x>5</x>
+     <y>126</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>LEPModeliDeger</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>textChanged(QString)</signal>
    <receiver>TMOGPUListeFormu</receiver>
    <slot>aramaYap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>529</x>
-     <y>59</y>
+     <x>538</x>
+     <y>62</y>
     </hint>
     <hint type="destinationlabel">
-     <x>812</x>
-     <y>-11</y>
+     <x>945</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliFTIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGPUListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>675</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>944</x>
+     <y>330</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliIFTIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGPUListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>944</x>
+     <y>371</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliFTIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGPUListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>945</x>
+     <y>405</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGPUListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGPUListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>214</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGPUListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>93</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>248</y>
     </hint>
    </hints>
   </connection>

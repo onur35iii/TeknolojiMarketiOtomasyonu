@@ -44,12 +44,11 @@ void TMOGucKaynagiListeFormu::on_pushButton_clicked()
 void TMOGucKaynagiListeFormu::ListeGuncelle()
 {
     ui->TWTablo->clear();
-    //satır sütun ayarlanır
     ui->TWTablo->setRowCount(liste.length()+1);
-    ui->TWTablo->setColumnCount(8);
+    ui->TWTablo->setColumnCount(12);
     QStringList basliklar;
-    basliklar << tr("Parça ID") << tr("Parça Türü") << tr("Parça Markası") << tr("Parça Modeli") << tr("Güç Değeri")
-              << tr("Fan Boyutu");
+    basliklar << tr("Parça ID") << tr("Parça Markası") << tr("Parça Modeli") << tr("Parça Türü") << tr("Fan Boyutu")
+              << tr("Güç Değeri");
     ui->TWTablo->setHorizontalHeaderLabels(basliklar);
 
     for(int i=0; i<liste.length(); i++){
@@ -134,15 +133,15 @@ void TMOGucKaynagiListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getGucKaynagiAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getGucKaynagiModelNo().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getGucKaynagiAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getGucKaynagiModelNo().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getGucKaynagiAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getGucKaynagiModelNo().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

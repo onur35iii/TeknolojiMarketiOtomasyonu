@@ -86,12 +86,12 @@ void TMOTedarikciListeWidget::listeGuncelle()
     ui->tblVeriler->setColumnCount(7);
 
     QStringList basliklar;
-    basliklar << tr("Tedarikçi ID") << tr("Tedarikçi Adı") << tr("Adresi") << tr("Telefon")
-              << tr("Yetkili Kişi") << tr("Tedarikçi Sil") << tr("Tedarikçi Düzelt");
+    basliklar << tr("Tedarikçi ID") << tr("Tedarikçi Adı") << tr("Adresi") << tr("Telefon") << tr("Yetkili Kişi") << tr("Tedarikçi Sil") << tr("Tedarikçi Düzelt");
     ui->tblVeriler->setHorizontalHeaderLabels(basliklar);
 
-    // Veri
-    for (int i = 0; i < liste.length(); i++) {
+
+    for (int i = 0; i < liste.length(); i++)
+    {
         QTableWidgetItem *hucre = new QTableWidgetItem();
         hucre->setText(tr("%1").arg(liste[i]->getId()));
         ui->tblVeriler->setItem(i, 0, hucre);

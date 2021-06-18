@@ -42,9 +42,9 @@ void TMOMonitorListeFormu::on_pushButton_clicked()
 void TMOMonitorListeFormu::ListeGuncelle()
 {
     ui->TWTablo->clear();
-    //satır sütun ayarlanır
+
     ui->TWTablo->setRowCount(liste.length()+1);
-    ui->TWTablo->setColumnCount(13);
+    ui->TWTablo->setColumnCount(15);
     QStringList basliklar;
     basliklar << tr("Monitor Id") << tr("Monitor Adi") << tr("Monitor ModelNo")<< tr("Monitor HDMI Baglanti Sayisi") << tr("Monitor Yenileme Hizi") << tr("Monitor Boyutu")
               << tr("Monitor Cozunurluk") << tr("Monitor Renk");
@@ -83,13 +83,11 @@ void TMOMonitorListeFormu::ListeGuncelle()
         hucre->setText(liste[i]->getMonitorRenk());
         ui->TWTablo->setItem(i, 7, hucre);
 
-        hucre = new QTableWidgetItem();
 
-        ui->TWTablo->setItem(i, 8, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 9, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 8, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -108,7 +106,7 @@ void TMOMonitorListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 10, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i,9, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                 TMOMonitorTanimlamaFormu form;
@@ -147,15 +145,15 @@ void TMOMonitorListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getMonitorAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getMonitorModelNo().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getMonitorAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getMonitorModelNo().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getMonitorAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getMonitorModelNo().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

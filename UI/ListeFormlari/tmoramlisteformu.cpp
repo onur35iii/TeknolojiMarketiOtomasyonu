@@ -129,15 +129,15 @@ void TMORAMListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getRamAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getRamModelNo().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getRamAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getRamModelNo().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getRamAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getRamModelNo().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

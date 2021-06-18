@@ -94,7 +94,20 @@ QPushButton{font:Bold;}
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QSpinBox" name="SPDPI"/>
+       <widget class="QSpinBox" name="SPDPI">
+        <property name="minimum">
+         <number>250</number>
+        </property>
+        <property name="maximum">
+         <number>2500</number>
+        </property>
+        <property name="singleStep">
+         <number>100</number>
+        </property>
+        <property name="displayIntegerBase">
+         <number>10</number>
+        </property>
+       </widget>
       </item>
       <item row="4" column="0">
        <widget class="QLabel" name="LBaglantiTuru">

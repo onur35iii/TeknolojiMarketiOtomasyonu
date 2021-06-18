@@ -40,7 +40,7 @@ void TMOKlavyeListeFormu::on_pushButton_clicked()
 void TMOKlavyeListeFormu::ListeGuncelle()
 {
     ui->TWTablo->clear();
-    //satır sütun ayarlanır
+
     ui->TWTablo->setRowCount(liste.length()+1);
     ui->TWTablo->setColumnCount(9);
     QStringList basliklar;
@@ -129,15 +129,15 @@ void TMOKlavyeListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getKlavyeAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getKlavyeModelNo().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getKlavyeAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getKlavyeModelNo().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getKlavyeAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getKlavyeModelNo().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

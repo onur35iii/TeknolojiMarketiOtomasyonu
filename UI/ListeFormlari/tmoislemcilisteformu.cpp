@@ -156,15 +156,15 @@ void TMOIslemciListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getIslemciAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getIslemciModelNo().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getIslemciAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getIslemciModelNo().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getIslemciAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getIslemciModelNo().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

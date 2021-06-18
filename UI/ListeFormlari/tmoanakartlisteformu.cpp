@@ -61,32 +61,36 @@ void TMOAnakartListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 0, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getAnakartModelNo());
+        hucre->setText(liste[i]->getAnakartAdi());
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getAnakartSoketTipi());
+        hucre->setText(liste[i]->getAnakartModelNo());
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getAnakartChipseti());
+        hucre->setText(liste[i]->getAnakartSoketTipi());
         ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getAnakartRamTipi());
+        hucre->setText(liste[i]->getAnakartChipseti());
         ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getAnakartVgaSlotu());
+        hucre->setText(liste[i]->getAnakartRamTipi());
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getAnakartBoyutu());
+        hucre->setText(liste[i]->getAnakartVgaSlotu());
         ui->TWTablo->setItem(i, 6, hucre);
+
+        hucre = new QTableWidgetItem();
+        hucre->setText(liste[i]->getAnakartBoyutu());
+        ui->TWTablo->setItem(i, 7, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 7, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 8, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -106,7 +110,7 @@ void TMOAnakartListeFormu::ListeGuncelle()
        });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 9, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                 TMOYeniAnakartTanimlamaFormu form;
@@ -145,15 +149,15 @@ void TMOAnakartListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getAnakartAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getAnakartModelNo().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getAnakartAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getAnakartModelNo().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getAnakartAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getAnakartModelNo().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }
