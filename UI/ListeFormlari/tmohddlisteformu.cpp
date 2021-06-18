@@ -139,15 +139,15 @@ void TMOHDDListeFormu::aramaYap()
             }
             if(ekran->LEPModeliDeger->text()!=""){
                 if(ekran->RBPModeliFTIleBaslayan->isChecked()){
-                    if(!veri->getHDDAdi().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getHDDBoyutu().toLower().startsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                 }else if(ekran->RBPModeliIFTIleBiten->isChecked()){
-                    if(!veri->getHDDAdi().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getHDDBoyutu().toLower().endsWith(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }else if(ekran->RBPModeliFTIceren->isChecked()){
-                    if(!veri->getHDDAdi().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
+                    if(!veri->getHDDBoyutu().toLower().contains(ekran->LEPModeliDeger->text().toLower())){
                         return false;
                     }
                  }

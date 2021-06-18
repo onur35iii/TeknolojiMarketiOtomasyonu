@@ -44,7 +44,7 @@ color: #ffffff;
       <item row="0" column="1">
        <widget class="QGroupBox" name="GPParcaModeli">
         <property name="title">
-         <string>Parça Modeli</string>
+         <string>Parça Boyutu</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_4">
          <item row="0" column="0">
