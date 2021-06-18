@@ -25,7 +25,9 @@ TMOTedarikciFormu::~TMOTedarikciFormu()
 {
     delete ui;
 }
-
+//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
 void TMOTedarikciFormu::on_tabTedarikciIslemleri_tabCloseRequested(int index){}
 
 void TMOTedarikciFormu::on_btnYeniTedarikci_clicked()

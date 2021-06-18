@@ -6,120 +6,153 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>259</width>
-    <height>316</height>
+    <width>1000</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>100</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="GBRAMBolumu">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>20</y>
-     <width>211</width>
-     <height>265</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>RAM Bölümü</string>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="6" column="0" colspan="2">
-     <widget class="QPushButton" name="PBKaydet">
-      <property name="text">
-       <string>KAYDET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="LKapasitesi">
-      <property name="text">
-       <string>KAPASİTESİ:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKapasitesi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEBusHizi"/>
-    </item>
-    <item row="5" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEGecikmeSuresi"/>
-    </item>
-    <item row="6" column="2">
-     <widget class="QPushButton" name="PBIptal">
-      <property name="text">
-       <string>IPTAL</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LBusHizi">
-      <property name="text">
-       <string>BUS HIZI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEBusHizi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEModelNo"/>
-    </item>
-    <item row="2" column="1" colspan="2">
-     <widget class="QLineEdit" name="LERAMTipi"/>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="LGecikmeSuresi">
-      <property name="text">
-       <string>GECİKME SÜRESİ:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEGecikmeSuresi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="LModelNo">
-      <property name="text">
-       <string>MODEL NO:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEModelNo</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="LRAMTipi">
-      <property name="text">
-       <string>RAM TİPİ:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LERAMTipi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEKapasitesi"/>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="LMarka">
-      <property name="text">
-       <string>MARKA:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEMarka</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1" colspan="2">
-     <widget class="QLineEdit" name="LEMarka"/>
-    </item>
-   </layout>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">TMORAMTanimlamaFormu{
+	background-image: url(:/resimler/ram.jpg);
+
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="GBRAMBolumu">
+     <property name="title">
+      <string>RAM Bölümü</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="6" column="0" colspan="2">
+       <widget class="QPushButton" name="PBKaydet">
+        <property name="text">
+         <string>KAYDET</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="LKapasitesi">
+        <property name="text">
+         <string>KAPASİTESİ:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEKapasitesi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" colspan="2">
+       <widget class="QLineEdit" name="LEBusHizi"/>
+      </item>
+      <item row="5" column="1" colspan="2">
+       <widget class="QLineEdit" name="LEGecikmeSuresi"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="PBIptal">
+        <property name="text">
+         <string>IPTAL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="LBusHizi">
+        <property name="text">
+         <string>BUS HIZI:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEBusHizi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="LEModelNo"/>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QLineEdit" name="LERAMTipi"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="LGecikmeSuresi">
+        <property name="text">
+         <string>GECİKME SÜRESİ:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEGecikmeSuresi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="LModelNo">
+        <property name="text">
+         <string>MODEL NO:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEModelNo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="LRAMTipi">
+        <property name="text">
+         <string>RAM TİPİ:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LERAMTipi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="2">
+       <widget class="QLineEdit" name="LEKapasitesi"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="LMarka">
+        <property name="text">
+         <string>MARKA:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEMarka</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="LEMarka"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <tabstops>
   <tabstop>LEMarka</tabstop>

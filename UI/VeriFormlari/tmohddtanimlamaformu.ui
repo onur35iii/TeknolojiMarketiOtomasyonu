@@ -6,120 +6,147 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>296</width>
-    <height>302</height>
+    <width>1000</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="GBHDDBolumu">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>9</y>
-     <width>262</width>
-     <height>212</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>HDD Bölümü</string>
-   </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="LMarka">
-      <property name="text">
-       <string>MARKA</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEMarka</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0" colspan="2">
-     <widget class="QLabel" name="LBaglantiArayuzu">
-      <property name="text">
-       <string>BAĞLANTI ARAYÜZÜ:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEBaglantiArayuzu</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QLineEdit" name="LEBaglantiArayuzu"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="LKapasitesi">
-      <property name="text">
-       <string>KAPASİTESİ :</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKapasitesi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QLineEdit" name="LEKapasitesi"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LOnbellek">
-      <property name="text">
-       <string>ÖNBELLEK:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEOnbellek</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2">
-     <widget class="QLineEdit" name="LEOnbellek"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="LDonusHizi">
-      <property name="text">
-       <string>DÖNÜŞ HIZI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEDonusHizi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="2">
-     <widget class="QLineEdit" name="LEDonusHizi"/>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="LBoyutu">
-      <property name="text">
-       <string>BOYUTU:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEBoyutu</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="2">
-     <widget class="QLineEdit" name="LEBoyutu"/>
-    </item>
-    <item row="6" column="0">
-     <widget class="QPushButton" name="PBKaydet">
-      <property name="text">
-       <string>KAYDET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="2">
-     <widget class="QPushButton" name="PBIptal">
-      <property name="text">
-       <string>IPTAL</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QLineEdit" name="LEMarka"/>
-    </item>
-   </layout>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">TMOHDDTanimlamaFormu{
+
+	background-image: url(:/resimler/hdd.jpg);
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="GBHDDBolumu">
+     <property name="title">
+      <string>HDD Bölümü</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="LMarka">
+        <property name="text">
+         <string>MARKA</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEMarka</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="LEMarka"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="LBaglantiArayuzu">
+        <property name="text">
+         <string>BAĞLANTI ARAYÜZÜ:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEBaglantiArayuzu</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="LEBaglantiArayuzu"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="LKapasitesi">
+        <property name="text">
+         <string>KAPASİTESİ :</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEKapasitesi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="LEKapasitesi"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="LOnbellek">
+        <property name="text">
+         <string>ÖNBELLEK:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEOnbellek</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="LEOnbellek"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="LDonusHizi">
+        <property name="text">
+         <string>DÖNÜŞ HIZI:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEDonusHizi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="LEDonusHizi"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="LBoyutu">
+        <property name="text">
+         <string>BOYUTU:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEBoyutu</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="LEBoyutu"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QPushButton" name="PBKaydet">
+        <property name="text">
+         <string>KAYDET</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QPushButton" name="PBIptal">
+        <property name="text">
+         <string>IPTAL</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <tabstops>
   <tabstop>LEMarka</tabstop>

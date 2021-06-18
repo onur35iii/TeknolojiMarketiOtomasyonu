@@ -54,44 +54,36 @@ void TMOKasaListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 0, hucre);
 
         hucre = new QTableWidgetItem();
-
+        hucre->setText(liste[i]->getKasaAdi());
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-     //   hucre->setText(liste[i]->getId());
+        hucre->setText(liste[i]->getKasaModelNo());
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getKasaAdi());
+        hucre->setText(liste[i]->getKasaFanSayisi());
         ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getKasaModelNo());
+        hucre->setText(liste[i]->getKasaGucKaynagivarmi());
         ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getKasaFanSayisi());
+        hucre->setText(tr("%1").arg(liste[i]->getKasaBoyutu()));
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getKasaGucKaynagivarmi());
+        hucre->setText(liste[i]->getKasaAnakartYapisi());
         ui->TWTablo->setItem(i, 6, hucre);
 
         hucre = new QTableWidgetItem();
-   //     hucre->setText(liste[i]->getKasaBoyutu());
-        ui->TWTablo->setItem(i, 7, hucre);
-
-        hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getKasaAnakartYapisi());
-        ui->TWTablo->setItem(i, 8, hucre);
-
-        hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getKasaRenk());
-        ui->TWTablo->setItem(i, 9, hucre);
+        ui->TWTablo->setItem(i, 7, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 10, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 8, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -110,7 +102,7 @@ void TMOKasaListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 11, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 9, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                 TMOKasaTanimlamaFormu form;

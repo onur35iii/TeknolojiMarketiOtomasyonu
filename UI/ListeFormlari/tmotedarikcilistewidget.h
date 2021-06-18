@@ -21,6 +21,8 @@ signals:
 private slots:
     void ara();
 
+    void on_btnAra_clicked();
+
 private:
     void listeGuncelle();
     Ui::TMOTedarikciListeWidget *ui;

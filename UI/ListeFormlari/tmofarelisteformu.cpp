@@ -16,6 +16,9 @@ TMOFareListeFormu::TMOFareListeFormu(QWidget *parent) :
 {
     ui->setupUi(this);
         aramaYap();
+        //410316OnurOkuyucu
+            //410306MuharremKorkmaz
+            //410305CoskunKocer
 }
 
 TMOFareListeFormu::~TMOFareListeFormu()
@@ -35,9 +38,8 @@ void TMOFareListeFormu::setListe(const TMOFareYoneticisi::VeriListesi &value)
 
 void TMOFareListeFormu::on_pushButton_clicked()
 {
-     aramaYap();
+    aramaYap();
 }
-
 
 
 void TMOFareListeFormu::ListeGuncelle()
@@ -154,5 +156,12 @@ void TMOFareListeFormu::aramaYap()
     });
 
     ListeGuncelle();
+
+}
+
+
+
+void TMOFareListeFormu::on_PBKapat_clicked()
+{
 
 }

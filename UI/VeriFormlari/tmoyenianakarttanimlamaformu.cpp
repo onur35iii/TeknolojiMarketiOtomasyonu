@@ -26,7 +26,9 @@ TMOAnakartPtr TMOYeniAnakartTanimlamaFormu::getVeri() const
 }
 
 void TMOYeniAnakartTanimlamaFormu::setVeri(const TMOAnakartPtr & value)
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     veri=value;
     ui->LEMarka->setText(veri->getAnakartAdi());
     ui->LEModelNo->setText(veri->getAnakartModelNo());

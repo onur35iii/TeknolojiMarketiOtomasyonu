@@ -24,7 +24,9 @@ TMOKlavyePtr TMOKlavyeTanimlamaFormu::getVeri() const
 }
 
 void TMOKlavyeTanimlamaFormu::setVeri(const TMOKlavyePtr &value)
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     veri = value;
      ui->LEMarka->setText(veri->getKlavyeAdi());
      ui->LEModelNo->setText(veri->getKlavyeModelNo());

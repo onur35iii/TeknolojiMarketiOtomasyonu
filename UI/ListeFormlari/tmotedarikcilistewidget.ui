@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1311</width>
-    <height>460</height>
+    <height>540</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -136,13 +136,6 @@
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="cbYazarkenAra">
-          <property name="text">
-           <string>Yazarken Ara</string>
-          </property>
-         </widget>
-        </item>
-        <item>
          <spacer name="verticalSpacer">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
@@ -166,5 +159,137 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>rbTedarikciAdiIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbTedarikciAdiIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbTedarikciAdiIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>434</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbYetkiliKisiIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>675</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1262</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbYetkiliKisiIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>854</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1307</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbYetkiliKisiIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1019</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1305</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leYetkiliKisiDegeri</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>732</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1217</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leTedarikciAdiDegeri</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOTedarikciListeWidget</receiver>
+   <slot>arama_yap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>arama_yap()</slot>
+ </slots>
 </ui>

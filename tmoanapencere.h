@@ -16,9 +16,6 @@ public:
     ~TMOAnaPencere();
 
 private slots:
-    void on_actionAnakart_triggered();
-
-
 
     void on_actionAnakart_Ekle_triggered();
 

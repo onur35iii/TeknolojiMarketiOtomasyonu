@@ -21,6 +21,8 @@ public:
 private slots:
 void on_pushButton_clicked();
 
+void on_PBAra_clicked();
+
 private:
     void ListeGuncelle();
     void aramaYap();

@@ -13,123 +13,150 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="GBKasaBolumu">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>40</y>
-     <width>275</width>
-     <height>321</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Kasa Bölümü</string>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="LEFanSayisi"/>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLineEdit" name="LEKasaAnakartYapisi"/>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="LKasaRenk">
-      <property name="text">
-       <string>KASA RENK:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKasaRenk</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="LFanSayisi">
-      <property name="text">
-       <string>FAN SAYISI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEFanSayisi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="LKasaAnakartYapisi">
-      <property name="text">
-       <string>KASA ANAKART YAPISI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKasaAnakartYapisi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="LMarka">
-      <property name="text">
-       <string>MARKALAR</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEMarka</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="0">
-     <widget class="QPushButton" name="PBKaydet">
-      <property name="text">
-       <string>KAYDET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="LEMarka"/>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="LEModelNo"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="LModelNo">
-      <property name="text">
-       <string>MODEL NO:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEModelNo</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="LKasaBoyutu">
-      <property name="text">
-       <string>KASA BOYUTU:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="1">
-     <widget class="QLineEdit" name="LEKasaRenk"/>
-    </item>
-    <item row="7" column="1">
-     <widget class="QPushButton" name="PBIptal">
-      <property name="text">
-       <string>IPTAL</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LGucKaynagi">
-      <property name="text">
-       <string>Güç Kaynağı VAR/YOK?</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEGucKaynagi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="LEGucKaynagi"/>
-    </item>
-    <item row="4" column="1">
-     <widget class="QSpinBox" name="SBKasaBoyutu"/>
-    </item>
-   </layout>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">TMOKasaTanimlamaFormu{
+
+	background-image: url(:/resimler/kasa.jpg);
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="GBKasaBolumu">
+     <property name="minimumSize">
+      <size>
+       <width>1000</width>
+       <height>600</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1000</width>
+       <height>600</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Kasa Bölümü</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="LEFanSayisi"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="LEKasaAnakartYapisi"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="LKasaRenk">
+        <property name="text">
+         <string>KASA RENK:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEKasaRenk</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="LFanSayisi">
+        <property name="text">
+         <string>FAN SAYISI:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEFanSayisi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="LKasaAnakartYapisi">
+        <property name="text">
+         <string>KASA ANAKART YAPISI:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEKasaAnakartYapisi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="LMarka">
+        <property name="text">
+         <string>MARKALAR</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEMarka</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="PBKaydet">
+        <property name="text">
+         <string>KAYDET</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="LEMarka"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="LEModelNo"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="LModelNo">
+        <property name="text">
+         <string>MODEL NO:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEModelNo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="LKasaBoyutu">
+        <property name="text">
+         <string>KASA BOYUTU:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="LEKasaRenk"/>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="PBIptal">
+        <property name="text">
+         <string>IPTAL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="LGucKaynagi">
+        <property name="text">
+         <string>Güç Kaynağı VAR/YOK?</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEGucKaynagi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="LEGucKaynagi"/>
+      </item>
+      <item row="4" column="1">
+       <widget class="QSpinBox" name="SBKasaBoyutu"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <tabstops>
   <tabstop>LEMarka</tabstop>

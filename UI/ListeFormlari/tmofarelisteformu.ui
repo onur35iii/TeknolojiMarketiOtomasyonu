@@ -6,12 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1316</width>
+    <width>1281</width>
     <height>630</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">TMOFareListeFormu{
+
+	background-image: url(:/resimler/fare.jpg);
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+QRadioButton{
+    font:Bold;
+color: #ffffff;
+}</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_6">
    <item row="0" column="0">
@@ -141,5 +161,170 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>RBPModeliFTIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1079</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1145</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliIFTIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>911</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>871</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliFTIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>744</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>684</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LEPModeliDeger</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1089</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1121</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>536</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>526</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>363</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LEPMarkasiDeger</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBKapat</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1222</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1276</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBAra</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOFareListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1154</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1277</x>
+     <y>350</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>aramaYap()</slot>
+  <slot>slot2()</slot>
+ </slots>
 </ui>

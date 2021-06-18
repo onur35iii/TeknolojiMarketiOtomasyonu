@@ -6,94 +6,121 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>317</width>
-    <height>274</height>
+    <width>1000</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="GBKlavyeBolumu">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>20</y>
-     <width>234</width>
-     <height>213</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Klavye Bölümü</string>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="4" column="0">
-     <widget class="QLabel" name="LKlavyeRenk">
-      <property name="text">
-       <string>KLAVYE RENK:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKlavyeRenk</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="LEKlavyeRenk"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LKlavyeTuru">
-      <property name="text">
-       <string>KLAVYE TÜRÜ:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEKlavyeTuru</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="LEModelNo"/>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="LEKlavyeTuru"/>
-    </item>
-    <item row="5" column="1">
-     <widget class="QPushButton" name="PBIptal">
-      <property name="text">
-       <string>IPTAL</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0">
-     <widget class="QPushButton" name="PBKaydet">
-      <property name="text">
-       <string>KAYDET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="LModelNo">
-      <property name="text">
-       <string>MODEL NO:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEModelNo</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="LMarka">
-      <property name="text">
-       <string>MARKA:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEMarka</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="LEMarka"/>
-    </item>
-   </layout>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">TMOKlavyeTanimlamaFormu{
+
+	background-image: url(:/resimler/klavye.jpg);
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="GBKlavyeBolumu">
+     <property name="title">
+      <string>Klavye Bölümü</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QLabel" name="LMarka">
+        <property name="text">
+         <string>MARKA:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEMarka</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="LEMarka"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="LModelNo">
+        <property name="text">
+         <string>MODEL NO:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEModelNo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="LEModelNo"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="LKlavyeTuru">
+        <property name="text">
+         <string>KLAVYE TÜRÜ:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEKlavyeTuru</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="LEKlavyeTuru"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="LKlavyeRenk">
+        <property name="text">
+         <string>KLAVYE RENK:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEKlavyeRenk</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="LEKlavyeRenk"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="PBKaydet">
+        <property name="text">
+         <string>KAYDET</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="PBIptal">
+        <property name="text">
+         <string>IPTAL</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <tabstops>
   <tabstop>LEMarka</tabstop>

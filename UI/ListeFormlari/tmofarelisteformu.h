@@ -19,10 +19,14 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void aramaYap();
+
+
+    void on_PBKapat_clicked();
 
 private:
     void ListeGuncelle();
-    void aramaYap();
+
     Ui::TMOFareListeFormu *ui;
      TMOFareYoneticisi::VeriListesi liste;
 };

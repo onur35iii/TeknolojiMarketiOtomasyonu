@@ -13,6 +13,27 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">TMOGucKaynagiListeFormu{
+
+	
+	background-image: url(:/resimler/guckaynagi.jpg);
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+QRadioButton{
+    font:Bold;
+color: #ffffff;
+}</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout_6">
    <item row="0" column="0">
     <widget class="QGroupBox" name="GPAramaBolumu">
@@ -141,5 +162,169 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>PBAra</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>861</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>987</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PBKapat</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>947</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>987</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliFTIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>709</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>989</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliIFTIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>582</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>987</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPModeliFTIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>988</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LEPModeliDeger</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>616</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>988</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LEPMarkasiDeger</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>97</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>198</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOGucKaynagiListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>187</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>aramaYap()</slot>
+ </slots>
 </ui>

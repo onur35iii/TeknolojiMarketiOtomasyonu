@@ -27,7 +27,9 @@ void TMOTedarikciListeWidget::arama_yap()
                 && ekran->leYetkiliKisiDegeri->text() == "") {
                 return true;
             }
-
+            //410316OnurOkuyucu
+                //410306MuharremKorkmaz
+                //410305CoskunKocer
             if (ekran->leTedarikciAdiDegeri->text() != "") {
                 if (ekran->rbTedarikciAdiIleBaslayan->isChecked()) {
                     if (!veri->getTedarikciAdi().toLower().startsWith(
@@ -74,9 +76,7 @@ void TMOTedarikciListeWidget::arama_yap()
 
 void TMOTedarikciListeWidget::ara()
 {
-    if (ui->cbYazarkenAra->isChecked()) {
-        arama_yap();
-    }
+
 }
 
 void TMOTedarikciListeWidget::listeGuncelle()
@@ -142,4 +142,9 @@ void TMOTedarikciListeWidget::listeGuncelle()
 
         });
     }
+}
+
+void TMOTedarikciListeWidget::on_btnAra_clicked()
+{
+    arama_yap();
 }

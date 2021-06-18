@@ -42,12 +42,14 @@ void TMOAnakartListeFormu::on_pushButton_clicked()
 
 
 void TMOAnakartListeFormu::ListeGuncelle()
-{
+{   //410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     ui->TWTablo->clear();
-
     ui->TWTablo->setRowCount(liste.length()+1);
     ui->TWTablo->setColumnCount(16);
     QStringList basliklar;
+
     basliklar << tr("Anakart ID  ") << tr("Anakart Adı") << tr("Anakart ModelNO") << tr("Anakart Soket Tipi") << tr("Anakart Chipseti")
               <<  tr("Anakart RAM Tipi ") << tr("Anakart VGA Slotu") << tr("Anakart Boyutu");
     ui->TWTablo->setHorizontalHeaderLabels(basliklar);
@@ -160,4 +162,9 @@ void TMOAnakartListeFormu::aramaYap()
     });
 
     ListeGuncelle();
+}
+
+void TMOAnakartListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
 }

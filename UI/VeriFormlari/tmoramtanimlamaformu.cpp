@@ -25,7 +25,9 @@ TMORAMPtr TMORAMTanimlamaFormu::getVeri() const
 }
 
 void TMORAMTanimlamaFormu::setVeri(const TMORAMPtr &value)
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     veri = value;
    ui->LEMarka->setText(veri->getRamAdi());
    ui->LEModelNo->setText(veri->getRamModelNo());

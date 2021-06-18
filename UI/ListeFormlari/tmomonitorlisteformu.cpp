@@ -26,7 +26,9 @@ TMOMonitorYoneticisi::VeriListesi TMOMonitorListeFormu::getListe() const
 {
     return liste;
 }
-
+//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
 void TMOMonitorListeFormu::setListe(const TMOMonitorYoneticisi::VeriListesi &value)
 {
     liste = value;
@@ -54,48 +56,40 @@ void TMOMonitorListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 0, hucre);
 
         hucre = new QTableWidgetItem();
-
+        hucre->setText(liste[i]->getMonitorAdi());
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-       // hucre->setText(liste[i]->getId());
+        hucre->setText(liste[i]->getMonitorModelNo());
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getMonitorAdi());
+       hucre->setText(tr("%1").arg(liste[i]->getMonitorHDMIBaglantiSayisi()));
         ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getMonitorModelNo());
+        hucre->setText(tr("%1").arg(liste[i]->getMonitorYenilemeHizi()));
         ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
-       // hucre->setText(liste[i]->getMonitorHDMIBaglantiSayisi());
+        hucre->setText(tr("%1").arg(liste[i]->getMonitorBoyutu()));
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-      //  hucre->setText(liste[i]->getMonitorYenilemeHizi());
+       hucre->setText(tr("%1").arg(liste[i]->getMonitorCozunurluk()));
         ui->TWTablo->setItem(i, 6, hucre);
 
         hucre = new QTableWidgetItem();
-       // hucre->setText(liste[i]->getMonitorBoyutu());
+        hucre->setText(liste[i]->getMonitorRenk());
         ui->TWTablo->setItem(i, 7, hucre);
 
         hucre = new QTableWidgetItem();
-       // hucre->setText(liste[i]->getMonitorCozunurluk());
+
         ui->TWTablo->setItem(i, 8, hucre);
-
-        hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getMonitorRenk());
-        ui->TWTablo->setItem(i, 9, hucre);
-
-        hucre = new QTableWidgetItem();
-
-        ui->TWTablo->setItem(i, 10, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 11, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 9, silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -114,7 +108,7 @@ void TMOMonitorListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 12, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 10, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                 TMOMonitorTanimlamaFormu form;

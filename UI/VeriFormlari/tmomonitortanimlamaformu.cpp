@@ -26,7 +26,9 @@ TMOMonitorPtr TMOMonitorTanimlamaFormu::getVeri() const
 }
 
 void TMOMonitorTanimlamaFormu::setVeri(const TMOMonitorPtr &value)
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     veri = value;
      ui->LEMarka->setText(veri->getMonitorAdi());
      ui->LEModelNo->setText(veri->getMonitorModelNo());

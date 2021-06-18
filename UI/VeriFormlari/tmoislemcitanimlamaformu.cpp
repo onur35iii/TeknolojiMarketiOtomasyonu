@@ -27,7 +27,9 @@ TMOIslemciPtr TMOIslemciTanimlamaFormu::getVeri() const
 
         return veri;
 }
-
+//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
 void TMOIslemciTanimlamaFormu::setVeri(const TMOIslemciPtr &value)
 {
       veri = value;

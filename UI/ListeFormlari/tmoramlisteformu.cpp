@@ -29,7 +29,9 @@ void TMORAMListeFormu::on_pushButton_clicked()
 }
 
 void TMORAMListeFormu::ListeGuncelle()
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     ui->TWTablo->clear();
     //satır sütun ayarlanır
     ui->TWTablo->setRowCount(liste.length()+1);

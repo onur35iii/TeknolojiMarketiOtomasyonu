@@ -25,7 +25,9 @@ TMOFarePtr TMOYeniFareTanimlamaFormu::getVeri() const
 }
 
 void TMOYeniFareTanimlamaFormu::setVeri(const TMOFarePtr &value)
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
    veri = value;
    ui->LEMarka->setText(veri->getFareAdi());
    ui->LEModeli->setText(veri->getFareModeli());

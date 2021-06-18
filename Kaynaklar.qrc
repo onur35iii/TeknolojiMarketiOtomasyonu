@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resimler/anakart.jpg</file>
+        <file>resimler/anapencere.jpg</file>
+        <file>resimler/fare.jpg</file>
+        <file>resimler/gpu.jpg</file>
+        <file>resimler/guckaynagi.jpg</file>
+        <file>resimler/hdd.jpg</file>
+        <file>resimler/islemci.jpg</file>
+        <file>resimler/kasa.jpg</file>
+        <file>resimler/klavye.jpg</file>
+        <file>resimler/ram.jpg</file>
+        <file>resimler/monitor.jpg</file>
+        <file>resimler/tedarikci.jpg</file>
+    </qresource>
+</RCC>

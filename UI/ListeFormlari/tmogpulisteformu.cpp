@@ -19,7 +19,9 @@ TMOGPUListeFormu::TMOGPUListeFormu(QWidget *parent) :
 }
 
 TMOGPUListeFormu::~TMOGPUListeFormu()
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     delete ui;
 }
 

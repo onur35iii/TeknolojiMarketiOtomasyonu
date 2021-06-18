@@ -6,12 +6,39 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>380</width>
-    <height>443</height>
+    <width>1000</width>
+    <height>668</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>668</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>668</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">TMOYeniFareTanimlamaFormu{
+	background-image: url(:/resimler/fare.jpg);
+}
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">

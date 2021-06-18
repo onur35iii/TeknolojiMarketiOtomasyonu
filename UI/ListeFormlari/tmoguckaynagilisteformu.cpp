@@ -23,7 +23,9 @@ TMOGucKaynagiListeFormu::~TMOGucKaynagiListeFormu()
 }
 
 TMOGucKaynagiYoneticisi::VeriListesi TMOGucKaynagiListeFormu::getListe() const
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     return liste;
 }
 

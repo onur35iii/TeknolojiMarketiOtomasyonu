@@ -27,7 +27,9 @@ void TMOParcaListeFormu::on_pushButton_clicked()
 {
     // aramaYap();
 }
-
+//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
 void TMOParcaListeFormu::ListeGuncelle()
 {
 

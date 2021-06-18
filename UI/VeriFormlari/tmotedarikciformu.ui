@@ -13,9 +13,51 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">TMOTedarikciFormu{
+
+	background-image: url(:/resimler/tedarikci.jpg);
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+QRadioButton{
+    font:Bold;
+color: #ffffff;
+}
+
+
+</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0" rowspan="3">
     <widget class="QTabWidget" name="tabTedarikciIslemleri">
+     <property name="styleSheet">
+      <string notr="true">TMOTedarikciFormu{
+
+	background-image: url(:/resimler/tedarikci.jpg);
+}
+
+QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+
+
+</string>
+     </property>
      <property name="tabPosition">
       <enum>QTabWidget::South</enum>
      </property>
@@ -69,5 +111,22 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnKapat</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOTedarikciFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>742</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>764</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

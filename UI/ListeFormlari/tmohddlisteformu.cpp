@@ -23,7 +23,9 @@ TMOHDDListeFormu::~TMOHDDListeFormu()
 }
 
 TMOHDDYoneticisi::VeriListesi TMOHDDListeFormu::getListe() const
-{
+{//410316OnurOkuyucu
+    //410306MuharremKorkmaz
+    //410305CoskunKocer
     return liste;
 }
 
@@ -54,37 +56,32 @@ void TMOHDDListeFormu::ListeGuncelle()
         ui->TWTablo->setItem(i, 0, hucre);
 
         hucre = new QTableWidgetItem();
-
-
+        hucre->setText(liste[i]->getHDDAdi());
         ui->TWTablo->setItem(i, 1, hucre);
 
         hucre = new QTableWidgetItem();
-    //    hucre->setText(liste[i]->getId());
+        hucre->setText(liste[i]->getHDDBaglantiArayuzu());
         ui->TWTablo->setItem(i, 2, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getHDDAdi());
+        hucre->setText(liste[i]->getHDDKapasitesi());
         ui->TWTablo->setItem(i, 3, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getHDDBaglantiArayuzu());
+        hucre->setText(liste[i]->getHDDOnbellek());
         ui->TWTablo->setItem(i, 4, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getHDDKapasitesi());
+        hucre->setText(liste[i]->getHDDDonusHizi());
         ui->TWTablo->setItem(i, 5, hucre);
 
         hucre = new QTableWidgetItem();
-        hucre->setText(liste[i]->getHDDDonusHizi());
-        ui->TWTablo->setItem(i, 6, hucre);
-
-        hucre = new QTableWidgetItem();
         hucre->setText(liste[i]->getHDDBoyutu());
-        ui->TWTablo->setItem(i, 7, hucre);
+        ui->TWTablo->setItem(i, 6, hucre);
 
         QPushButton *silmeButonu = new QPushButton(this);
         silmeButonu->setText(tr("Parçayı Sil"));
-        ui->TWTablo->setCellWidget(i, 8, silmeButonu);
+        ui->TWTablo->setCellWidget(i, 7 , silmeButonu);
 
         auto veri_i = liste[i];
 
@@ -103,7 +100,7 @@ void TMOHDDListeFormu::ListeGuncelle()
         });
         QPushButton *duzeltmeButonu = new QPushButton(this);
         duzeltmeButonu->setText(tr("Parçayı Düzelt"));
-        ui->TWTablo->setCellWidget(i, 9, duzeltmeButonu);
+        ui->TWTablo->setCellWidget(i, 8, duzeltmeButonu);
 
         connect(duzeltmeButonu, &QPushButton::clicked, [veri_i, this]() {
                TMOHDDTanimlamaFormu  form;
@@ -159,4 +156,9 @@ void TMOHDDListeFormu::aramaYap()
     });
 
     ListeGuncelle();
+}
+
+void TMOHDDListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
 }

@@ -24,7 +24,9 @@ TMOGPUPtr TMOGPUTanimlamaFormu::getVeri() const
     veri->setGPUBellekHizi(ui->LEBellekHizi->text());
     veri->setGPUBoyutu(ui->SBGPUBoyutu->value());
     return veri;
-}
+}//410316OnurOkuyucu
+//410306MuharremKorkmaz
+//410305CoskunKocer
 
 void TMOGPUTanimlamaFormu::setVeri(const TMOGPUPtr &value)
 {

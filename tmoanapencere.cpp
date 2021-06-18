@@ -7,6 +7,7 @@
 #include <veriler/tmogenelveriyoneticisi.h>
 #include <veriler/TANIMLAR.h>
 #include <QDebug>
+#include<QPixmap>
 
 #include<UI/VeriFormlari/tmoyenianakarttanimlamaformu.h>
 #include<UI/VeriFormlari/tmogputanimlamaformu.h>
@@ -55,6 +56,11 @@ TMOAnaPencere::TMOAnaPencere(QWidget *parent)
     , ui(new Ui::TMOAnaPencere)
 {
     ui->setupUi(this);
+    QPixmap bkgnd("C:/Users/onurf/OneDrive/Belgeler/TeknolojiMarketiOtomasyonu/veriler/parcagorselleri/anapencere.jpg");
+       bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+       QPalette palette;
+       palette.setBrush(QPalette::Background, bkgnd);
+       this->setPalette(palette);
     TMOGenelVeriYoneticisi::sec();
     QString dosya_yolu=QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
     QDir dosya_klasoru(dosya_yolu);
@@ -81,24 +87,6 @@ TMOAnaPencere::~TMOAnaPencere()
     }
 
 }
-
-
-
-void TMOAnaPencere::on_actionAnakart_triggered()
-{/*
-
-    TMOYeniAnakartTanimlamaFormu form;
-    auto veri = TMOGenelVeriYoneticisi::sec().getAnakart().yeni();
-
-    form.setVeri(veri);
-    form.setWindowTitle(tr("Yeni Anakart Ekleme"));
-
-    if (form.exec() == QDialog::Accepted) {
-        form.getVeri();
-        TMOGenelVeriYoneticisi::sec().getAnakart().ekle(veri);}*/
-
-}
-
 
 void TMOAnaPencere::on_actionAnakart_Ekle_triggered()
 {

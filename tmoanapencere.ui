@@ -6,12 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>662</height>
+    <width>974</width>
+    <height>609</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>974</width>
+    <height>609</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>TMOAnaPencere</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-image: url(:/resimler/anapencere.jpg);}</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QStatusBar" name="statusbar"/>
@@ -20,7 +30,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1280</width>
+     <width>974</width>
      <height>21</height>
     </rect>
    </property>

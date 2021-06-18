@@ -6,133 +6,292 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>322</width>
-    <height>306</height>
+    <width>728</width>
+    <height>455</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>728</width>
+    <height>455</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>728</width>
+    <height>455</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="GBAnakartBolumu">
-   <property name="geometry">
-    <rect>
-     <x>9</x>
-     <y>9</y>
-     <width>291</width>
-     <height>271</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>Anakart Bölümü</string>
-   </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QLabel" name="LMarka">
-      <property name="text">
-       <string>MARKA:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEMarka</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <widget class="QLineEdit" name="LEMarka"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="LModelNo">
-      <property name="text">
-       <string>MODEL NO:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEModelNo</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="LEModelNo"/>
-    </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="LSoketTipi">
-      <property name="text">
-       <string>SOKET TİPİ:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LESoketTipi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="1">
-     <widget class="QLineEdit" name="LESoketTipi"/>
-    </item>
-    <item row="3" column="0">
-     <widget class="QLabel" name="LRAMTipi">
-      <property name="text">
-       <string>RAM TİPİ :</string>
-      </property>
-      <property name="buddy">
-       <cstring>LERamTipi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
-     <widget class="QLineEdit" name="LERamTipi"/>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="LChipseti">
-      <property name="text">
-       <string>CHİPSETİ</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEChipseti</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="LEChipseti"/>
-    </item>
-    <item row="5" column="0">
-     <widget class="QLabel" name="LVGASlotSayisi">
-      <property name="text">
-       <string>VGA SLOT SAYISI:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEVGASlotSayisi</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0">
-     <widget class="QLabel" name="LAnakartBoyutu">
-      <property name="text">
-       <string>ANAKART BOYUTU:</string>
-      </property>
-      <property name="buddy">
-       <cstring>LEAnakartBoyutu</cstring>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="1">
-     <widget class="QLineEdit" name="LEAnakartBoyutu"/>
-    </item>
-    <item row="7" column="0">
-     <widget class="QPushButton" name="PBKaydet">
-      <property name="text">
-       <string>KAYDET</string>
-      </property>
-     </widget>
-    </item>
-    <item row="7" column="1">
-     <widget class="QPushButton" name="PBIptal">
-      <property name="text">
-       <string>IPTAL</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="1">
-     <widget class="QLineEdit" name="LEVGASlotSayisi"/>
-    </item>
-   </layout>
-  </widget>
+  <property name="styleSheet">
+   <string notr="true">TMOYeniAnakartTanimlamaFormu{
+background-image: url(:/resimler/anakart.jpg);
+
+
+
+}QLabel {
+   font:Bold; 
+   color: #ffffff;
+}
+QGroupBox {
+    font:Bold;
+color: #ffffff;
+}
+QPushButton{font:Bold;}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="GBAnakartBolumu">
+     <property name="styleSheet">
+      <string notr="true">font-color{color.white;}
+	</string>
+     </property>
+     <property name="title">
+      <string>Anakart Bölümü</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="LMarka">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="NoBrush">
+             <color alpha="128">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="text">
+         <string>MARKA:</string>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="openExternalLinks">
+         <bool>false</bool>
+        </property>
+        <property name="buddy">
+         <cstring>LEMarka</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="LEMarka"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="LModelNo">
+        <property name="text">
+         <string>MODEL NO:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEModelNo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="LEModelNo"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="LSoketTipi">
+        <property name="text">
+         <string>SOKET TİPİ:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LESoketTipi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="LESoketTipi"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="LRAMTipi">
+        <property name="text">
+         <string>RAM TİPİ :</string>
+        </property>
+        <property name="buddy">
+         <cstring>LERamTipi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="LERamTipi"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="LChipseti">
+        <property name="text">
+         <string>CHİPSETİ</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEChipseti</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="LEChipseti"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="LVGASlotSayisi">
+        <property name="text">
+         <string>VGA SLOT SAYISI:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEVGASlotSayisi</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="LAnakartBoyutu">
+        <property name="text">
+         <string>ANAKART BOYUTU:</string>
+        </property>
+        <property name="buddy">
+         <cstring>LEAnakartBoyutu</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="LEAnakartBoyutu"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="PBKaydet">
+        <property name="text">
+         <string>KAYDET</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="PBIptal">
+        <property name="text">
+         <string>IPTAL</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="LEVGASlotSayisi"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <tabstops>
   <tabstop>LEMarka</tabstop>
