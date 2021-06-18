@@ -24,6 +24,8 @@ private slots:
 
     void on_PBKapat_clicked();
 
+    void on_PBAra_clicked();
+
 private:
     void ListeGuncelle();
 

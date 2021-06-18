@@ -165,3 +165,8 @@ void TMOFareListeFormu::on_PBKapat_clicked()
 {
 
 }
+
+void TMOFareListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
+}

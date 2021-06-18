@@ -159,3 +159,8 @@ void TMOKasaListeFormu::aramaYap()
 
     ListeGuncelle();
 }
+
+void TMOKasaListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
+}

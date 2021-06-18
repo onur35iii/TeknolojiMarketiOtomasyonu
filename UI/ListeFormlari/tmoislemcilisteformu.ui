@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>963</width>
-    <height>554</height>
+    <width>964</width>
+    <height>573</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -171,11 +171,11 @@ color: #ffffff;
    <hints>
     <hint type="sourcelabel">
      <x>819</x>
-     <y>87</y>
+     <y>82</y>
     </hint>
     <hint type="destinationlabel">
-     <x>958</x>
-     <y>149</y>
+     <x>843</x>
+     <y>-18</y>
     </hint>
    </hints>
   </connection>
@@ -186,12 +186,12 @@ color: #ffffff;
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>902</x>
-     <y>83</y>
+     <x>904</x>
+     <y>85</y>
     </hint>
     <hint type="destinationlabel">
-     <x>959</x>
-     <y>181</y>
+     <x>958</x>
+     <y>177</y>
     </hint>
    </hints>
   </connection>
@@ -202,12 +202,12 @@ color: #ffffff;
    <slot>aramaYap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>669</x>
-     <y>116</y>
+     <x>688</x>
+     <y>117</y>
     </hint>
     <hint type="destinationlabel">
      <x>960</x>
-     <y>212</y>
+     <y>240</y>
     </hint>
    </hints>
   </connection>
@@ -218,12 +218,12 @@ color: #ffffff;
    <slot>aramaYap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>579</x>
-     <y>112</y>
+     <x>565</x>
+     <y>114</y>
     </hint>
     <hint type="destinationlabel">
-     <x>961</x>
-     <y>246</y>
+     <x>962</x>
+     <y>315</y>
     </hint>
    </hints>
   </connection>
@@ -234,76 +234,12 @@ color: #ffffff;
    <slot>aramaYap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>487</x>
-     <y>111</y>
+     <x>481</x>
+     <y>115</y>
     </hint>
     <hint type="destinationlabel">
-     <x>960</x>
-     <y>291</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>LEPModeliDeger</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>TMOIslemciListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>602</x>
-     <y>65</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>963</x>
-     <y>331</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>LEPMarkasiDeger</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>TMOIslemciListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>179</x>
-     <y>59</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>5</x>
-     <y>59</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPMarkasiFTIleBaslayan</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOIslemciListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>90</x>
-     <y>111</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>4</x>
-     <y>122</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>RBPMarkasiFTIleBiten</sender>
-   <signal>clicked()</signal>
-   <receiver>TMOIslemciListeFormu</receiver>
-   <slot>aramaYap()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>196</x>
-     <y>113</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>3</x>
-     <y>165</y>
+     <x>964</x>
+     <y>363</y>
     </hint>
    </hints>
   </connection>
@@ -314,12 +250,76 @@ color: #ffffff;
    <slot>aramaYap()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>303</x>
-     <y>112</y>
+     <x>315</x>
+     <y>111</y>
     </hint>
     <hint type="destinationlabel">
-     <x>6</x>
-     <y>221</y>
+     <x>0</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOIslemciListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RBPMarkasiFTIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMOIslemciListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LEPMarkasiDeger</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOIslemciListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LEPModeliDeger</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMOIslemciListeFormu</receiver>
+   <slot>aramaYap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>961</x>
+     <y>99</y>
     </hint>
    </hints>
   </connection>

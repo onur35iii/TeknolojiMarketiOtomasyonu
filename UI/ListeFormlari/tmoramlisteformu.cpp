@@ -147,3 +147,8 @@ void TMORAMListeFormu::aramaYap()
 
     ListeGuncelle();
 }
+
+void TMORAMListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
+}

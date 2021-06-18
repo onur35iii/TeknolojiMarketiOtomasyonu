@@ -162,3 +162,8 @@ void TMOGPUListeFormu::aramaYap()
 }
 
 
+
+void TMOGPUListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
+}

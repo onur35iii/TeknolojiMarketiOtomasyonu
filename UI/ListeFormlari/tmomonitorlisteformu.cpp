@@ -163,3 +163,8 @@ void TMOMonitorListeFormu::aramaYap()
 
     ListeGuncelle();
 }
+
+void TMOMonitorListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
+}

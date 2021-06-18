@@ -152,3 +152,8 @@ void TMOGucKaynagiListeFormu::aramaYap()
     ListeGuncelle();
 
 }
+
+void TMOGucKaynagiListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
+}

@@ -36,7 +36,7 @@ void TMOIslemciListeFormu::setListe(const TMOIslemciYoneticisi::VeriListesi &val
 
 void TMOIslemciListeFormu::on_pushButton_clicked()
 {
-    aramaYap();
+  aramaYap();
 }
 
 void TMOIslemciListeFormu::ListeGuncelle()
@@ -173,4 +173,9 @@ void TMOIslemciListeFormu::aramaYap()
     });
 
     ListeGuncelle();
+}
+
+void TMOIslemciListeFormu::on_PBAra_clicked()
+{
+    aramaYap();
 }
