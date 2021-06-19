@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Klavye Liste Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/resimler/klavye.jpg</normaloff>
+    <normalon>:/resimler/klavye.jpg</normalon>:/resimler/klavye.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">
@@ -162,7 +167,9 @@ color: #ffffff;
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>PBAra</sender>

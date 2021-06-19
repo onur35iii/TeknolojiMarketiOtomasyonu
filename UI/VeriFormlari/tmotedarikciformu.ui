@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Tedarikçi Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/resimler/tedarikci.jpg</normaloff>
+    <normalon>:/resimler/tedarikci.jpg</normalon>:/resimler/tedarikci.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">TMOTedarikciFormu{
@@ -110,7 +115,9 @@ QPushButton{font:Bold;}
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>btnKapat</sender>

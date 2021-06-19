@@ -6,12 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>393</width>
-    <height>438</height>
+    <width>1018</width>
+    <height>618</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Kasa Ekleme Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/resimler/kasa.jpg</normaloff>
+    <normalon>:/resimler/kasa.jpg</normalon>:/resimler/kasa.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">TMOKasaTanimlamaFormu{
@@ -168,7 +173,9 @@ QPushButton{font:Bold;}
   <tabstop>PBKaydet</tabstop>
   <tabstop>PBIptal</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>PBKaydet</sender>

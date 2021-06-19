@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Tedarikçi Ekleme Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../resimler/tedarikci.jpg</normaloff>
+    <normalon>../../../resimler/tedarikci.jpg</normalon>../../../resimler/tedarikci.jpg</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">

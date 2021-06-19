@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>GPU Listeleme Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/resimler/gpu.jpg</normaloff>
+    <normalon>:/resimler/gpu.jpg</normalon>:/resimler/gpu.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">
@@ -161,7 +166,9 @@ color: #ffffff;
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>PBAra</sender>

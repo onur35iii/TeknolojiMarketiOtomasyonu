@@ -19,9 +19,18 @@
   <property name="windowTitle">
    <string>TMOAnaPencere</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>resimler/anapencere.jpg</normaloff>
+    <normalon>:/resimler/anapencere.jpg</normalon>resimler/anapencere.jpg</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow{
-	background-image: url(:/resimler/anapencere.jpg);}</string>
+	background-image: url(:/resimler/anapencere.jpg);
+
+   icon-image:url(:/resimler/anapencere.jpg);
+
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
   <widget class="QStatusBar" name="statusbar"/>

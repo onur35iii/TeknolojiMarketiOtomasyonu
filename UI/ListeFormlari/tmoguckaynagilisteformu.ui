@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Güç Kaynağı Liste Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/resimler/guckaynagi.jpg</normaloff>
+    <normalon>:/resimler/guckaynagi.jpg</normalon>:/resimler/guckaynagi.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">TMOGucKaynagiListeFormu{
@@ -161,7 +166,9 @@ color: #ffffff;
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>PBAra</sender>

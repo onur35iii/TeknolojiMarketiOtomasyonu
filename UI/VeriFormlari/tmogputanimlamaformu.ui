@@ -23,7 +23,12 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>GPU Ekleme Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../resimler/gpu.jpg</normaloff>
+    <normalon>:/resimler/gpu.jpg</normalon>../../resimler/gpu.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">TMOGPUTanimlamaFormu{

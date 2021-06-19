@@ -56,11 +56,11 @@ TMOAnaPencere::TMOAnaPencere(QWidget *parent)
     , ui(new Ui::TMOAnaPencere)
 {
     ui->setupUi(this);
-    QPixmap bkgnd("C:/Users/onurf/OneDrive/Belgeler/TeknolojiMarketiOtomasyonu/veriler/parcagorselleri/anapencere.jpg");
+    /*QPixmap bkgnd("C:/Users/onurf/OneDrive/Belgeler/TeknolojiMarketiOtomasyonu/veriler/parcagorselleri/anapencere.jpg");
        bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
        QPalette palette;
        palette.setBrush(QPalette::Background, bkgnd);
-       this->setPalette(palette);
+       this->setPalette(palette);*/
     TMOGenelVeriYoneticisi::sec();
     QString dosya_yolu=QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
     QDir dosya_klasoru(dosya_yolu);

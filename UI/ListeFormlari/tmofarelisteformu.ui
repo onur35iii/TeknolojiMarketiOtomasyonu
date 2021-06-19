@@ -11,7 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Fare Liste Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/resimler/fare.jpg</normaloff>
+    <normalon>:/resimler/fare.jpg</normalon>:/resimler/fare.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">TMOFareListeFormu{
@@ -160,7 +165,9 @@ color: #ffffff;
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>RBPModeliFTIceren</sender>

@@ -23,7 +23,12 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Anakart Ekleme Formu</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../Kaynaklar.qrc">
+    <normaloff>:/resimler/anakart.jpg</normaloff>
+    <normalon>:/resimler/anakart.jpg</normalon>:/resimler/anakart.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">TMOYeniAnakartTanimlamaFormu{
@@ -304,7 +309,9 @@ QPushButton{font:Bold;}
   <tabstop>PBKaydet</tabstop>
   <tabstop>PBIptal</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="../../Kaynaklar.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>PBKaydet</sender>
